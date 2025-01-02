@@ -1,5 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# Ignore all JSON and Parquet files
 *.json
 *.parquet
+
+# Do not ignore folder structures
+!Data/
+!Data/0.Raw/
+!Data/1.EarlyCleaned/
+!Data/1.EarlyCleaned/cleaned_parquet/
+!Data/1.EarlyCleaned/raw_parquet/
+!Data/2.Processed/
+!Data/2.Processed/EDA/
+!Data/2.Processed/ModellingData/
