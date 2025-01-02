@@ -1,0 +1,1 @@
+echo.> Data\0.Raw\.gitkeep && echo.> Data\1.EarlyCleaned\.gitkeep && echo.> Data\1.EarlyCleaned\cleaned_parquet\.gitkeep && echo.> Data\1.EarlyCleaned\raw_parquet\.gitkeep && echo.> Data\2.Processed\.gitkeep && echo.> Data\2.Processed\EDA\.gitkeep && echo.> Data\2.Processed\ModellingData\.gitkeep
