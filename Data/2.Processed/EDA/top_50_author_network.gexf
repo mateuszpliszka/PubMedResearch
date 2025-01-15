@@ -1,0 +1,1288 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-01-15">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Gudnason Vilmundur" label="Gudnason Vilmundur" />
+      <node id="van Duijn Cornelia M" label="van Duijn Cornelia M" />
+      <node id="Uitterlinden André G" label="Uitterlinden André G" />
+      <node id="Rotter Jerome I" label="Rotter Jerome I" />
+      <node id="Chanock Stephen J" label="Chanock Stephen J" />
+      <node id="Haiman Christopher A" label="Haiman Christopher A" />
+      <node id="Zhao Wei" label="Zhao Wei" />
+      <node id="Ikram M Arfan" label="Ikram M Arfan" />
+      <node id="Teumer Alexander" label="Teumer Alexander" />
+      <node id="Launer Lenore J" label="Launer Lenore J" />
+      <node id="Kraft Peter" label="Kraft Peter" />
+      <node id="Liu Jianjun" label="Liu Jianjun" />
+      <node id="Fornage Myriam" label="Fornage Myriam" />
+      <node id="Boehnke Michael" label="Boehnke Michael" />
+      <node id="Rudan Igor" label="Rudan Igor" />
+      <node id="Kubo Michiaki" label="Kubo Michiaki" />
+      <node id="Boomsma Dorret I" label="Boomsma Dorret I" />
+      <node id="Ridker Paul M" label="Ridker Paul M" />
+      <node id="Zheng Wei" label="Zheng Wei" />
+      <node id="Clarke Robert" label="Clarke Robert" />
+      <node id="Chasman Daniel I" label="Chasman Daniel I" />
+      <node id="Salomaa Veikko" label="Salomaa Veikko" />
+      <node id="Hofman Albert" label="Hofman Albert" />
+      <node id="Stefansson Kari" label="Stefansson Kari" />
+      <node id="Ferrucci Luigi" label="Ferrucci Luigi" />
+      <node id="Loos Ruth J F" label="Loos Ruth J F" />
+      <node id="Psaty Bruce M" label="Psaty Bruce M" />
+      <node id="Harris Tamara B" label="Harris Tamara B" />
+      <node id="Morris Andrew P" label="Morris Andrew P" />
+      <node id="Taylor Kent D" label="Taylor Kent D" />
+      <node id="Hayward Caroline" label="Hayward Caroline" />
+      <node id="Peters Annette" label="Peters Annette" />
+      <node id="Franke Andre" label="Franke Andre" />
+      <node id="Kamatani Yoichiro" label="Kamatani Yoichiro" />
+      <node id="McCarthy Mark I" label="McCarthy Mark I" />
+      <node id="Hakonarson Hakon" label="Hakonarson Hakon" />
+      <node id="Nöthen Markus M" label="Nöthen Markus M" />
+      <node id="Metspalu Andres" label="Metspalu Andres" />
+      <node id="Wilson James F" label="Wilson James F" />
+      <node id="Medland Sarah E" label="Medland Sarah E" />
+      <node id="Wang Zhe" label="Wang Zhe" />
+      <node id="Mägi Reedik" label="Mägi Reedik" />
+      <node id="Shu Xiao-Ou" label="Shu Xiao-Ou" />
+      <node id="Smith Albert V" label="Smith Albert V" />
+      <node id="Gieger Christian" label="Gieger Christian" />
+      <node id="Esko Tõnu" label="Esko Tõnu" />
+      <node id="Campbell Harry" label="Campbell Harry" />
+      <node id="Boerwinkle Eric" label="Boerwinkle Eric" />
+      <node id="Meitinger Thomas" label="Meitinger Thomas" />
+      <node id="Martin Nicholas G" label="Martin Nicholas G" />
+    </nodes>
+    <edges>
+      <edge source="Gudnason Vilmundur" target="Harris Tamara B" id="0" weight="141" />
+      <edge source="Gudnason Vilmundur" target="Launer Lenore J" id="1" weight="145" />
+      <edge source="Gudnason Vilmundur" target="Psaty Bruce M" id="2" weight="102" />
+      <edge source="Gudnason Vilmundur" target="Rotter Jerome I" id="3" weight="88" />
+      <edge source="Gudnason Vilmundur" target="Uitterlinden André G" id="4" weight="50" />
+      <edge source="Gudnason Vilmundur" target="Boerwinkle Eric" id="5" weight="78" />
+      <edge source="Gudnason Vilmundur" target="Smith Albert V" id="6" weight="90" />
+      <edge source="Gudnason Vilmundur" target="Hofman Albert" id="7" weight="69" />
+      <edge source="Gudnason Vilmundur" target="van Duijn Cornelia M" id="8" weight="77" />
+      <edge source="Gudnason Vilmundur" target="Chasman Daniel I" id="9" weight="61" />
+      <edge source="Gudnason Vilmundur" target="Ridker Paul M" id="10" weight="57" />
+      <edge source="Gudnason Vilmundur" target="Meitinger Thomas" id="11" weight="34" />
+      <edge source="Gudnason Vilmundur" target="Fornage Myriam" id="12" weight="53" />
+      <edge source="Gudnason Vilmundur" target="Ikram M Arfan" id="13" weight="46" />
+      <edge source="Gudnason Vilmundur" target="Esko Tõnu" id="14" weight="34" />
+      <edge source="Gudnason Vilmundur" target="Nöthen Markus M" id="15" weight="15" />
+      <edge source="Gudnason Vilmundur" target="Metspalu Andres" id="16" weight="42" />
+      <edge source="Gudnason Vilmundur" target="Teumer Alexander" id="17" weight="48" />
+      <edge source="Gudnason Vilmundur" target="Hayward Caroline" id="18" weight="69" />
+      <edge source="Gudnason Vilmundur" target="Campbell Harry" id="19" weight="38" />
+      <edge source="Gudnason Vilmundur" target="Mägi Reedik" id="20" weight="35" />
+      <edge source="Gudnason Vilmundur" target="Franke Andre" id="21" weight="14" />
+      <edge source="Gudnason Vilmundur" target="Ferrucci Luigi" id="22" weight="35" />
+      <edge source="Gudnason Vilmundur" target="Rudan Igor" id="23" weight="52" />
+      <edge source="Gudnason Vilmundur" target="Wilson James F" id="24" weight="48" />
+      <edge source="Gudnason Vilmundur" target="Salomaa Veikko" id="25" weight="38" />
+      <edge source="Gudnason Vilmundur" target="McCarthy Mark I" id="26" weight="27" />
+      <edge source="Gudnason Vilmundur" target="Martin Nicholas G" id="27" weight="36" />
+      <edge source="Gudnason Vilmundur" target="Loos Ruth J F" id="28" weight="54" />
+      <edge source="Gudnason Vilmundur" target="Gieger Christian" id="29" weight="44" />
+      <edge source="Gudnason Vilmundur" target="Boomsma Dorret I" id="30" weight="32" />
+      <edge source="Gudnason Vilmundur" target="Stefansson Kari" id="31" weight="38" />
+      <edge source="Gudnason Vilmundur" target="Boehnke Michael" id="32" weight="38" />
+      <edge source="Gudnason Vilmundur" target="Clarke Robert" id="33" weight="8" />
+      <edge source="Gudnason Vilmundur" target="Kraft Peter" id="34" weight="18" />
+      <edge source="Gudnason Vilmundur" target="Liu Jianjun" id="35" weight="17" />
+      <edge source="Gudnason Vilmundur" target="Morris Andrew P" id="36" weight="34" />
+      <edge source="Gudnason Vilmundur" target="Chanock Stephen J" id="37" weight="8" />
+      <edge source="Gudnason Vilmundur" target="Peters Annette" id="38" weight="44" />
+      <edge source="Gudnason Vilmundur" target="Taylor Kent D" id="39" weight="42" />
+      <edge source="Gudnason Vilmundur" target="Kubo Michiaki" id="40" weight="17" />
+      <edge source="Gudnason Vilmundur" target="Medland Sarah E" id="41" weight="19" />
+      <edge source="Gudnason Vilmundur" target="Hakonarson Hakon" id="42" weight="11" />
+      <edge source="Gudnason Vilmundur" target="Haiman Christopher A" id="43" weight="8" />
+      <edge source="Gudnason Vilmundur" target="Zhao Wei" id="44" weight="37" />
+      <edge source="Gudnason Vilmundur" target="Zheng Wei" id="45" weight="12" />
+      <edge source="Gudnason Vilmundur" target="Kamatani Yoichiro" id="46" weight="18" />
+      <edge source="Gudnason Vilmundur" target="Shu Xiao-Ou" id="47" weight="10" />
+      <edge source="Gudnason Vilmundur" target="Wang Zhe" id="48" weight="4" />
+      <edge source="van Duijn Cornelia M" target="Launer Lenore J" id="49" weight="56" />
+      <edge source="van Duijn Cornelia M" target="Harris Tamara B" id="50" weight="64" />
+      <edge source="van Duijn Cornelia M" target="Smith Albert V" id="51" weight="52" />
+      <edge source="van Duijn Cornelia M" target="Boerwinkle Eric" id="52" weight="66" />
+      <edge source="van Duijn Cornelia M" target="Hofman Albert" id="53" weight="80" />
+      <edge source="van Duijn Cornelia M" target="Uitterlinden André G" id="54" weight="70" />
+      <edge source="van Duijn Cornelia M" target="Chasman Daniel I" id="55" weight="51" />
+      <edge source="van Duijn Cornelia M" target="Ridker Paul M" id="56" weight="48" />
+      <edge source="van Duijn Cornelia M" target="Rotter Jerome I" id="57" weight="63" />
+      <edge source="van Duijn Cornelia M" target="Psaty Bruce M" id="58" weight="73" />
+      <edge source="van Duijn Cornelia M" target="Teumer Alexander" id="59" weight="40" />
+      <edge source="van Duijn Cornelia M" target="Meitinger Thomas" id="60" weight="31" />
+      <edge source="van Duijn Cornelia M" target="Mägi Reedik" id="61" weight="36" />
+      <edge source="van Duijn Cornelia M" target="Morris Andrew P" id="62" weight="33" />
+      <edge source="van Duijn Cornelia M" target="Gieger Christian" id="63" weight="53" />
+      <edge source="van Duijn Cornelia M" target="Clarke Robert" id="64" weight="7" />
+      <edge source="van Duijn Cornelia M" target="Hayward Caroline" id="65" weight="65" />
+      <edge source="van Duijn Cornelia M" target="Loos Ruth J F" id="66" weight="49" />
+      <edge source="van Duijn Cornelia M" target="Salomaa Veikko" id="67" weight="43" />
+      <edge source="van Duijn Cornelia M" target="Rudan Igor" id="68" weight="52" />
+      <edge source="van Duijn Cornelia M" target="Campbell Harry" id="69" weight="43" />
+      <edge source="van Duijn Cornelia M" target="Wilson James F" id="70" weight="54" />
+      <edge source="van Duijn Cornelia M" target="Boomsma Dorret I" id="71" weight="47" />
+      <edge source="van Duijn Cornelia M" target="Ferrucci Luigi" id="72" weight="34" />
+      <edge source="van Duijn Cornelia M" target="Stefansson Kari" id="73" weight="43" />
+      <edge source="van Duijn Cornelia M" target="Boehnke Michael" id="74" weight="40" />
+      <edge source="van Duijn Cornelia M" target="McCarthy Mark I" id="75" weight="34" />
+      <edge source="van Duijn Cornelia M" target="Fornage Myriam" id="76" weight="41" />
+      <edge source="van Duijn Cornelia M" target="Ikram M Arfan" id="77" weight="54" />
+      <edge source="van Duijn Cornelia M" target="Esko Tõnu" id="78" weight="30" />
+      <edge source="van Duijn Cornelia M" target="Martin Nicholas G" id="79" weight="42" />
+      <edge source="van Duijn Cornelia M" target="Metspalu Andres" id="80" weight="47" />
+      <edge source="van Duijn Cornelia M" target="Franke Andre" id="81" weight="12" />
+      <edge source="van Duijn Cornelia M" target="Kraft Peter" id="82" weight="16" />
+      <edge source="van Duijn Cornelia M" target="Liu Jianjun" id="83" weight="14" />
+      <edge source="van Duijn Cornelia M" target="Chanock Stephen J" id="84" weight="7" />
+      <edge source="van Duijn Cornelia M" target="Peters Annette" id="85" weight="35" />
+      <edge source="van Duijn Cornelia M" target="Taylor Kent D" id="86" weight="30" />
+      <edge source="van Duijn Cornelia M" target="Medland Sarah E" id="87" weight="18" />
+      <edge source="van Duijn Cornelia M" target="Hakonarson Hakon" id="88" weight="15" />
+      <edge source="van Duijn Cornelia M" target="Kubo Michiaki" id="89" weight="14" />
+      <edge source="van Duijn Cornelia M" target="Nöthen Markus M" id="90" weight="11" />
+      <edge source="van Duijn Cornelia M" target="Kamatani Yoichiro" id="91" weight="14" />
+      <edge source="van Duijn Cornelia M" target="Haiman Christopher A" id="92" weight="6" />
+      <edge source="van Duijn Cornelia M" target="Zhao Wei" id="93" weight="29" />
+      <edge source="van Duijn Cornelia M" target="Zheng Wei" id="94" weight="10" />
+      <edge source="van Duijn Cornelia M" target="Shu Xiao-Ou" id="95" weight="9" />
+      <edge source="van Duijn Cornelia M" target="Wang Zhe" id="96" weight="5" />
+      <edge source="Uitterlinden André G" target="Psaty Bruce M" id="97" weight="55" />
+      <edge source="Uitterlinden André G" target="Rotter Jerome I" id="98" weight="53" />
+      <edge source="Uitterlinden André G" target="Harris Tamara B" id="99" weight="47" />
+      <edge source="Uitterlinden André G" target="Boerwinkle Eric" id="100" weight="46" />
+      <edge source="Uitterlinden André G" target="Hofman Albert" id="101" weight="80" />
+      <edge source="Uitterlinden André G" target="Launer Lenore J" id="102" weight="33" />
+      <edge source="Uitterlinden André G" target="Smith Albert V" id="103" weight="34" />
+      <edge source="Uitterlinden André G" target="Chasman Daniel I" id="104" weight="36" />
+      <edge source="Uitterlinden André G" target="Ridker Paul M" id="105" weight="33" />
+      <edge source="Uitterlinden André G" target="Meitinger Thomas" id="106" weight="27" />
+      <edge source="Uitterlinden André G" target="Mägi Reedik" id="107" weight="32" />
+      <edge source="Uitterlinden André G" target="Morris Andrew P" id="108" weight="25" />
+      <edge source="Uitterlinden André G" target="Gieger Christian" id="109" weight="39" />
+      <edge source="Uitterlinden André G" target="Clarke Robert" id="110" weight="6" />
+      <edge source="Uitterlinden André G" target="Hayward Caroline" id="111" weight="44" />
+      <edge source="Uitterlinden André G" target="Loos Ruth J F" id="112" weight="31" />
+      <edge source="Uitterlinden André G" target="Salomaa Veikko" id="113" weight="29" />
+      <edge source="Uitterlinden André G" target="Rudan Igor" id="114" weight="37" />
+      <edge source="Uitterlinden André G" target="Campbell Harry" id="115" weight="30" />
+      <edge source="Uitterlinden André G" target="Wilson James F" id="116" weight="35" />
+      <edge source="Uitterlinden André G" target="Boomsma Dorret I" id="117" weight="33" />
+      <edge source="Uitterlinden André G" target="Ferrucci Luigi" id="118" weight="28" />
+      <edge source="Uitterlinden André G" target="Stefansson Kari" id="119" weight="30" />
+      <edge source="Uitterlinden André G" target="Boehnke Michael" id="120" weight="23" />
+      <edge source="Uitterlinden André G" target="McCarthy Mark I" id="121" weight="23" />
+      <edge source="Uitterlinden André G" target="Esko Tõnu" id="122" weight="29" />
+      <edge source="Uitterlinden André G" target="Nöthen Markus M" id="123" weight="6" />
+      <edge source="Uitterlinden André G" target="Metspalu Andres" id="124" weight="39" />
+      <edge source="Uitterlinden André G" target="Martin Nicholas G" id="125" weight="33" />
+      <edge source="Uitterlinden André G" target="Kraft Peter" id="126" weight="12" />
+      <edge source="Uitterlinden André G" target="Fornage Myriam" id="127" weight="26" />
+      <edge source="Uitterlinden André G" target="Hakonarson Hakon" id="128" weight="11" />
+      <edge source="Uitterlinden André G" target="Kubo Michiaki" id="129" weight="11" />
+      <edge source="Uitterlinden André G" target="Teumer Alexander" id="130" weight="37" />
+      <edge source="Uitterlinden André G" target="Liu Jianjun" id="131" weight="10" />
+      <edge source="Uitterlinden André G" target="Medland Sarah E" id="132" weight="18" />
+      <edge source="Uitterlinden André G" target="Peters Annette" id="133" weight="31" />
+      <edge source="Uitterlinden André G" target="Chanock Stephen J" id="134" weight="5" />
+      <edge source="Uitterlinden André G" target="Franke Andre" id="135" weight="10" />
+      <edge source="Uitterlinden André G" target="Kamatani Yoichiro" id="136" weight="8" />
+      <edge source="Uitterlinden André G" target="Haiman Christopher A" id="137" weight="6" />
+      <edge source="Uitterlinden André G" target="Taylor Kent D" id="138" weight="24" />
+      <edge source="Uitterlinden André G" target="Zhao Wei" id="139" weight="23" />
+      <edge source="Uitterlinden André G" target="Zheng Wei" id="140" weight="7" />
+      <edge source="Uitterlinden André G" target="Shu Xiao-Ou" id="141" weight="6" />
+      <edge source="Uitterlinden André G" target="Ikram M Arfan" id="142" weight="33" />
+      <edge source="Uitterlinden André G" target="Wang Zhe" id="143" weight="2" />
+      <edge source="Rotter Jerome I" target="Taylor Kent D" id="144" weight="171" />
+      <edge source="Rotter Jerome I" target="Ridker Paul M" id="145" weight="53" />
+      <edge source="Rotter Jerome I" target="Chasman Daniel I" id="146" weight="66" />
+      <edge source="Rotter Jerome I" target="Psaty Bruce M" id="147" weight="165" />
+      <edge source="Rotter Jerome I" target="Harris Tamara B" id="148" weight="71" />
+      <edge source="Rotter Jerome I" target="Boerwinkle Eric" id="149" weight="110" />
+      <edge source="Rotter Jerome I" target="Hofman Albert" id="150" weight="63" />
+      <edge source="Rotter Jerome I" target="Launer Lenore J" id="151" weight="68" />
+      <edge source="Rotter Jerome I" target="Smith Albert V" id="152" weight="73" />
+      <edge source="Rotter Jerome I" target="Teumer Alexander" id="153" weight="47" />
+      <edge source="Rotter Jerome I" target="Meitinger Thomas" id="154" weight="39" />
+      <edge source="Rotter Jerome I" target="Hakonarson Hakon" id="155" weight="17" />
+      <edge source="Rotter Jerome I" target="Mägi Reedik" id="156" weight="27" />
+      <edge source="Rotter Jerome I" target="Morris Andrew P" id="157" weight="47" />
+      <edge source="Rotter Jerome I" target="Gieger Christian" id="158" weight="46" />
+      <edge source="Rotter Jerome I" target="Clarke Robert" id="159" weight="6" />
+      <edge source="Rotter Jerome I" target="Hayward Caroline" id="160" weight="61" />
+      <edge source="Rotter Jerome I" target="Loos Ruth J F" id="161" weight="87" />
+      <edge source="Rotter Jerome I" target="Salomaa Veikko" id="162" weight="41" />
+      <edge source="Rotter Jerome I" target="Rudan Igor" id="163" weight="41" />
+      <edge source="Rotter Jerome I" target="Campbell Harry" id="164" weight="32" />
+      <edge source="Rotter Jerome I" target="Wilson James F" id="165" weight="39" />
+      <edge source="Rotter Jerome I" target="Boomsma Dorret I" id="166" weight="23" />
+      <edge source="Rotter Jerome I" target="Ferrucci Luigi" id="167" weight="31" />
+      <edge source="Rotter Jerome I" target="Stefansson Kari" id="168" weight="36" />
+      <edge source="Rotter Jerome I" target="Boehnke Michael" id="169" weight="45" />
+      <edge source="Rotter Jerome I" target="McCarthy Mark I" id="170" weight="31" />
+      <edge source="Rotter Jerome I" target="Fornage Myriam" id="171" weight="87" />
+      <edge source="Rotter Jerome I" target="Ikram M Arfan" id="172" weight="44" />
+      <edge source="Rotter Jerome I" target="Esko Tõnu" id="173" weight="25" />
+      <edge source="Rotter Jerome I" target="Nöthen Markus M" id="174" weight="12" />
+      <edge source="Rotter Jerome I" target="Metspalu Andres" id="175" weight="34" />
+      <edge source="Rotter Jerome I" target="Martin Nicholas G" id="176" weight="27" />
+      <edge source="Rotter Jerome I" target="Kraft Peter" id="177" weight="13" />
+      <edge source="Rotter Jerome I" target="Kubo Michiaki" id="178" weight="22" />
+      <edge source="Rotter Jerome I" target="Zhao Wei" id="179" weight="48" />
+      <edge source="Rotter Jerome I" target="Peters Annette" id="180" weight="42" />
+      <edge source="Rotter Jerome I" target="Liu Jianjun" id="181" weight="24" />
+      <edge source="Rotter Jerome I" target="Franke Andre" id="182" weight="13" />
+      <edge source="Rotter Jerome I" target="Zheng Wei" id="183" weight="17" />
+      <edge source="Rotter Jerome I" target="Shu Xiao-Ou" id="184" weight="16" />
+      <edge source="Rotter Jerome I" target="Chanock Stephen J" id="185" weight="5" />
+      <edge source="Rotter Jerome I" target="Haiman Christopher A" id="186" weight="8" />
+      <edge source="Rotter Jerome I" target="Kamatani Yoichiro" id="187" weight="27" />
+      <edge source="Rotter Jerome I" target="Medland Sarah E" id="188" weight="11" />
+      <edge source="Rotter Jerome I" target="Wang Zhe" id="189" weight="9" />
+      <edge source="Chanock Stephen J" target="Haiman Christopher A" id="190" weight="100" />
+      <edge source="Chanock Stephen J" target="Kraft Peter" id="191" weight="118" />
+      <edge source="Chanock Stephen J" target="Ridker Paul M" id="192" weight="9" />
+      <edge source="Chanock Stephen J" target="Chasman Daniel I" id="193" weight="10" />
+      <edge source="Chanock Stephen J" target="Stefansson Kari" id="194" weight="15" />
+      <edge source="Chanock Stephen J" target="Campbell Harry" id="195" weight="8" />
+      <edge source="Chanock Stephen J" target="Gieger Christian" id="196" weight="9" />
+      <edge source="Chanock Stephen J" target="Zheng Wei" id="197" weight="93" />
+      <edge source="Chanock Stephen J" target="Shu Xiao-Ou" id="198" weight="59" />
+      <edge source="Chanock Stephen J" target="Mägi Reedik" id="199" weight="10" />
+      <edge source="Chanock Stephen J" target="Esko Tõnu" id="200" weight="5" />
+      <edge source="Chanock Stephen J" target="Clarke Robert" id="201" weight="3" />
+      <edge source="Chanock Stephen J" target="Hayward Caroline" id="202" weight="10" />
+      <edge source="Chanock Stephen J" target="Hofman Albert" id="203" weight="5" />
+      <edge source="Chanock Stephen J" target="Launer Lenore J" id="204" weight="5" />
+      <edge source="Chanock Stephen J" target="Liu Jianjun" id="205" weight="21" />
+      <edge source="Chanock Stephen J" target="Martin Nicholas G" id="206" weight="10" />
+      <edge source="Chanock Stephen J" target="Meitinger Thomas" id="207" weight="5" />
+      <edge source="Chanock Stephen J" target="Morris Andrew P" id="208" weight="5" />
+      <edge source="Chanock Stephen J" target="Salomaa Veikko" id="209" weight="6" />
+      <edge source="Chanock Stephen J" target="Boerwinkle Eric" id="210" weight="8" />
+      <edge source="Chanock Stephen J" target="Boomsma Dorret I" id="211" weight="7" />
+      <edge source="Chanock Stephen J" target="Harris Tamara B" id="212" weight="7" />
+      <edge source="Chanock Stephen J" target="Metspalu Andres" id="213" weight="9" />
+      <edge source="Chanock Stephen J" target="Peters Annette" id="214" weight="7" />
+      <edge source="Chanock Stephen J" target="Rudan Igor" id="215" weight="8" />
+      <edge source="Chanock Stephen J" target="Wilson James F" id="216" weight="8" />
+      <edge source="Chanock Stephen J" target="Boehnke Michael" id="217" weight="6" />
+      <edge source="Chanock Stephen J" target="McCarthy Mark I" id="218" weight="5" />
+      <edge source="Chanock Stephen J" target="Loos Ruth J F" id="219" weight="9" />
+      <edge source="Chanock Stephen J" target="Fornage Myriam" id="220" weight="3" />
+      <edge source="Chanock Stephen J" target="Ferrucci Luigi" id="221" weight="7" />
+      <edge source="Chanock Stephen J" target="Teumer Alexander" id="222" weight="7" />
+      <edge source="Chanock Stephen J" target="Medland Sarah E" id="223" weight="5" />
+      <edge source="Chanock Stephen J" target="Psaty Bruce M" id="224" weight="6" />
+      <edge source="Chanock Stephen J" target="Zhao Wei" id="225" weight="8" />
+      <edge source="Chanock Stephen J" target="Hakonarson Hakon" id="226" weight="4" />
+      <edge source="Chanock Stephen J" target="Kubo Michiaki" id="227" weight="10" />
+      <edge source="Chanock Stephen J" target="Nöthen Markus M" id="228" weight="3" />
+      <edge source="Chanock Stephen J" target="Smith Albert V" id="229" weight="4" />
+      <edge source="Chanock Stephen J" target="Ikram M Arfan" id="230" weight="2" />
+      <edge source="Chanock Stephen J" target="Kamatani Yoichiro" id="231" weight="7" />
+      <edge source="Chanock Stephen J" target="Taylor Kent D" id="232" weight="3" />
+      <edge source="Chanock Stephen J" target="Wang Zhe" id="233" weight="1" />
+      <edge source="Chanock Stephen J" target="Franke Andre" id="234" weight="1" />
+      <edge source="Haiman Christopher A" target="Kraft Peter" id="235" weight="87" />
+      <edge source="Haiman Christopher A" target="Harris Tamara B" id="236" weight="8" />
+      <edge source="Haiman Christopher A" target="Liu Jianjun" id="237" weight="14" />
+      <edge source="Haiman Christopher A" target="Shu Xiao-Ou" id="238" weight="56" />
+      <edge source="Haiman Christopher A" target="Zheng Wei" id="239" weight="97" />
+      <edge source="Haiman Christopher A" target="Fornage Myriam" id="240" weight="8" />
+      <edge source="Haiman Christopher A" target="Chasman Daniel I" id="241" weight="9" />
+      <edge source="Haiman Christopher A" target="Martin Nicholas G" id="242" weight="8" />
+      <edge source="Haiman Christopher A" target="Kubo Michiaki" id="243" weight="11" />
+      <edge source="Haiman Christopher A" target="Loos Ruth J F" id="244" weight="12" />
+      <edge source="Haiman Christopher A" target="Zhao Wei" id="245" weight="7" />
+      <edge source="Haiman Christopher A" target="Hakonarson Hakon" id="246" weight="4" />
+      <edge source="Haiman Christopher A" target="Psaty Bruce M" id="247" weight="8" />
+      <edge source="Haiman Christopher A" target="Boerwinkle Eric" id="248" weight="11" />
+      <edge source="Haiman Christopher A" target="Mägi Reedik" id="249" weight="10" />
+      <edge source="Haiman Christopher A" target="Teumer Alexander" id="250" weight="7" />
+      <edge source="Haiman Christopher A" target="Clarke Robert" id="251" weight="3" />
+      <edge source="Haiman Christopher A" target="Hayward Caroline" id="252" weight="8" />
+      <edge source="Haiman Christopher A" target="Nöthen Markus M" id="253" weight="2" />
+      <edge source="Haiman Christopher A" target="Boomsma Dorret I" id="254" weight="5" />
+      <edge source="Haiman Christopher A" target="Campbell Harry" id="255" weight="7" />
+      <edge source="Haiman Christopher A" target="Gieger Christian" id="256" weight="9" />
+      <edge source="Haiman Christopher A" target="Hofman Albert" id="257" weight="4" />
+      <edge source="Haiman Christopher A" target="Meitinger Thomas" id="258" weight="6" />
+      <edge source="Haiman Christopher A" target="Morris Andrew P" id="259" weight="6" />
+      <edge source="Haiman Christopher A" target="Peters Annette" id="260" weight="8" />
+      <edge source="Haiman Christopher A" target="Rudan Igor" id="261" weight="7" />
+      <edge source="Haiman Christopher A" target="Salomaa Veikko" id="262" weight="4" />
+      <edge source="Haiman Christopher A" target="Ferrucci Luigi" id="263" weight="8" />
+      <edge source="Haiman Christopher A" target="Ridker Paul M" id="264" weight="8" />
+      <edge source="Haiman Christopher A" target="Wilson James F" id="265" weight="8" />
+      <edge source="Haiman Christopher A" target="Boehnke Michael" id="266" weight="6" />
+      <edge source="Haiman Christopher A" target="McCarthy Mark I" id="267" weight="8" />
+      <edge source="Haiman Christopher A" target="Metspalu Andres" id="268" weight="9" />
+      <edge source="Haiman Christopher A" target="Stefansson Kari" id="269" weight="13" />
+      <edge source="Haiman Christopher A" target="Medland Sarah E" id="270" weight="4" />
+      <edge source="Haiman Christopher A" target="Esko Tõnu" id="271" weight="4" />
+      <edge source="Haiman Christopher A" target="Smith Albert V" id="272" weight="3" />
+      <edge source="Haiman Christopher A" target="Taylor Kent D" id="273" weight="7" />
+      <edge source="Haiman Christopher A" target="Launer Lenore J" id="274" weight="4" />
+      <edge source="Haiman Christopher A" target="Kamatani Yoichiro" id="275" weight="8" />
+      <edge source="Haiman Christopher A" target="Ikram M Arfan" id="276" weight="1" />
+      <edge source="Haiman Christopher A" target="Franke Andre" id="277" weight="1" />
+      <edge source="Zhao Wei" target="Hakonarson Hakon" id="278" weight="11" />
+      <edge source="Zhao Wei" target="Psaty Bruce M" id="279" weight="43" />
+      <edge source="Zhao Wei" target="Zheng Wei" id="280" weight="14" />
+      <edge source="Zhao Wei" target="Loos Ruth J F" id="281" weight="37" />
+      <edge source="Zhao Wei" target="Fornage Myriam" id="282" weight="45" />
+      <edge source="Zhao Wei" target="Chasman Daniel I" id="283" weight="34" />
+      <edge source="Zhao Wei" target="Ridker Paul M" id="284" weight="32" />
+      <edge source="Zhao Wei" target="Taylor Kent D" id="285" weight="35" />
+      <edge source="Zhao Wei" target="Boerwinkle Eric" id="286" weight="44" />
+      <edge source="Zhao Wei" target="Teumer Alexander" id="287" weight="26" />
+      <edge source="Zhao Wei" target="Harris Tamara B" id="288" weight="28" />
+      <edge source="Zhao Wei" target="Ferrucci Luigi" id="289" weight="19" />
+      <edge source="Zhao Wei" target="Liu Jianjun" id="290" weight="14" />
+      <edge source="Zhao Wei" target="Mägi Reedik" id="291" weight="23" />
+      <edge source="Zhao Wei" target="Medland Sarah E" id="292" weight="14" />
+      <edge source="Zhao Wei" target="Clarke Robert" id="293" weight="2" />
+      <edge source="Zhao Wei" target="Hayward Caroline" id="294" weight="39" />
+      <edge source="Zhao Wei" target="Nöthen Markus M" id="295" weight="2" />
+      <edge source="Zhao Wei" target="Kubo Michiaki" id="296" weight="10" />
+      <edge source="Zhao Wei" target="Campbell Harry" id="297" weight="15" />
+      <edge source="Zhao Wei" target="Gieger Christian" id="298" weight="28" />
+      <edge source="Zhao Wei" target="Hofman Albert" id="299" weight="14" />
+      <edge source="Zhao Wei" target="Morris Andrew P" id="300" weight="24" />
+      <edge source="Zhao Wei" target="Peters Annette" id="301" weight="30" />
+      <edge source="Zhao Wei" target="Rudan Igor" id="302" weight="29" />
+      <edge source="Zhao Wei" target="Salomaa Veikko" id="303" weight="26" />
+      <edge source="Zhao Wei" target="Martin Nicholas G" id="304" weight="24" />
+      <edge source="Zhao Wei" target="Metspalu Andres" id="305" weight="30" />
+      <edge source="Zhao Wei" target="Wilson James F" id="306" weight="20" />
+      <edge source="Zhao Wei" target="Stefansson Kari" id="307" weight="24" />
+      <edge source="Zhao Wei" target="McCarthy Mark I" id="308" weight="21" />
+      <edge source="Zhao Wei" target="Boehnke Michael" id="309" weight="30" />
+      <edge source="Zhao Wei" target="Smith Albert V" id="310" weight="24" />
+      <edge source="Zhao Wei" target="Ikram M Arfan" id="311" weight="22" />
+      <edge source="Zhao Wei" target="Kamatani Yoichiro" id="312" weight="12" />
+      <edge source="Zhao Wei" target="Launer Lenore J" id="313" weight="25" />
+      <edge source="Zhao Wei" target="Meitinger Thomas" id="314" weight="14" />
+      <edge source="Zhao Wei" target="Boomsma Dorret I" id="315" weight="20" />
+      <edge source="Zhao Wei" target="Kraft Peter" id="316" weight="13" />
+      <edge source="Zhao Wei" target="Esko Tõnu" id="317" weight="26" />
+      <edge source="Zhao Wei" target="Shu Xiao-Ou" id="318" weight="11" />
+      <edge source="Zhao Wei" target="Zhao Wei" id="319" weight="4" />
+      <edge source="Zhao Wei" target="Franke Andre" id="320" weight="8" />
+      <edge source="Zhao Wei" target="Wang Zhe" id="321" weight="6" />
+      <edge source="Ikram M Arfan" target="Fornage Myriam" id="322" weight="44" />
+      <edge source="Ikram M Arfan" target="Smith Albert V" id="323" weight="29" />
+      <edge source="Ikram M Arfan" target="Psaty Bruce M" id="324" weight="47" />
+      <edge source="Ikram M Arfan" target="Harris Tamara B" id="325" weight="23" />
+      <edge source="Ikram M Arfan" target="Boerwinkle Eric" id="326" weight="40" />
+      <edge source="Ikram M Arfan" target="Hofman Albert" id="327" weight="49" />
+      <edge source="Ikram M Arfan" target="Launer Lenore J" id="328" weight="40" />
+      <edge source="Ikram M Arfan" target="Taylor Kent D" id="329" weight="25" />
+      <edge source="Ikram M Arfan" target="Medland Sarah E" id="330" weight="19" />
+      <edge source="Ikram M Arfan" target="Martin Nicholas G" id="331" weight="29" />
+      <edge source="Ikram M Arfan" target="McCarthy Mark I" id="332" weight="17" />
+      <edge source="Ikram M Arfan" target="Hakonarson Hakon" id="333" weight="11" />
+      <edge source="Ikram M Arfan" target="Teumer Alexander" id="334" weight="30" />
+      <edge source="Ikram M Arfan" target="Nöthen Markus M" id="335" weight="11" />
+      <edge source="Ikram M Arfan" target="Boomsma Dorret I" id="336" weight="24" />
+      <edge source="Ikram M Arfan" target="Ridker Paul M" id="337" weight="26" />
+      <edge source="Ikram M Arfan" target="Meitinger Thomas" id="338" weight="20" />
+      <edge source="Ikram M Arfan" target="Stefansson Kari" id="339" weight="24" />
+      <edge source="Ikram M Arfan" target="Chasman Daniel I" id="340" weight="28" />
+      <edge source="Ikram M Arfan" target="Loos Ruth J F" id="341" weight="24" />
+      <edge source="Ikram M Arfan" target="Kamatani Yoichiro" id="342" weight="14" />
+      <edge source="Ikram M Arfan" target="Gieger Christian" id="343" weight="22" />
+      <edge source="Ikram M Arfan" target="Ferrucci Luigi" id="344" weight="11" />
+      <edge source="Ikram M Arfan" target="Mägi Reedik" id="345" weight="15" />
+      <edge source="Ikram M Arfan" target="Kubo Michiaki" id="346" weight="11" />
+      <edge source="Ikram M Arfan" target="Salomaa Veikko" id="347" weight="19" />
+      <edge source="Ikram M Arfan" target="Morris Andrew P" id="348" weight="17" />
+      <edge source="Ikram M Arfan" target="Kraft Peter" id="349" weight="10" />
+      <edge source="Ikram M Arfan" target="Boehnke Michael" id="350" weight="18" />
+      <edge source="Ikram M Arfan" target="Metspalu Andres" id="351" weight="20" />
+      <edge source="Ikram M Arfan" target="Rudan Igor" id="352" weight="19" />
+      <edge source="Ikram M Arfan" target="Hayward Caroline" id="353" weight="27" />
+      <edge source="Ikram M Arfan" target="Campbell Harry" id="354" weight="15" />
+      <edge source="Ikram M Arfan" target="Wilson James F" id="355" weight="20" />
+      <edge source="Ikram M Arfan" target="Peters Annette" id="356" weight="21" />
+      <edge source="Ikram M Arfan" target="Esko Tõnu" id="357" weight="11" />
+      <edge source="Ikram M Arfan" target="Franke Andre" id="358" weight="11" />
+      <edge source="Ikram M Arfan" target="Wang Zhe" id="359" weight="3" />
+      <edge source="Ikram M Arfan" target="Liu Jianjun" id="360" weight="12" />
+      <edge source="Ikram M Arfan" target="Shu Xiao-Ou" id="361" weight="8" />
+      <edge source="Ikram M Arfan" target="Zheng Wei" id="362" weight="8" />
+      <edge source="Ikram M Arfan" target="Clarke Robert" id="363" weight="1" />
+      <edge source="Teumer Alexander" target="Boehnke Michael" id="364" weight="23" />
+      <edge source="Teumer Alexander" target="Gieger Christian" id="365" weight="39" />
+      <edge source="Teumer Alexander" target="Meitinger Thomas" id="366" weight="22" />
+      <edge source="Teumer Alexander" target="McCarthy Mark I" id="367" weight="17" />
+      <edge source="Teumer Alexander" target="Clarke Robert" id="368" weight="5" />
+      <edge source="Teumer Alexander" target="Salomaa Veikko" id="369" weight="29" />
+      <edge source="Teumer Alexander" target="Ferrucci Luigi" id="370" weight="34" />
+      <edge source="Teumer Alexander" target="Loos Ruth J F" id="371" weight="31" />
+      <edge source="Teumer Alexander" target="Hofman Albert" id="372" weight="37" />
+      <edge source="Teumer Alexander" target="Psaty Bruce M" id="373" weight="58" />
+      <edge source="Teumer Alexander" target="Smith Albert V" id="374" weight="31" />
+      <edge source="Teumer Alexander" target="Hayward Caroline" id="375" weight="44" />
+      <edge source="Teumer Alexander" target="Launer Lenore J" id="376" weight="32" />
+      <edge source="Teumer Alexander" target="Harris Tamara B" id="377" weight="36" />
+      <edge source="Teumer Alexander" target="Boerwinkle Eric" id="378" weight="46" />
+      <edge source="Teumer Alexander" target="Campbell Harry" id="379" weight="32" />
+      <edge source="Teumer Alexander" target="Mägi Reedik" id="380" weight="26" />
+      <edge source="Teumer Alexander" target="Ridker Paul M" id="381" weight="41" />
+      <edge source="Teumer Alexander" target="Franke Andre" id="382" weight="14" />
+      <edge source="Teumer Alexander" target="Rudan Igor" id="383" weight="35" />
+      <edge source="Teumer Alexander" target="Wilson James F" id="384" weight="35" />
+      <edge source="Teumer Alexander" target="Chasman Daniel I" id="385" weight="45" />
+      <edge source="Teumer Alexander" target="Medland Sarah E" id="386" weight="23" />
+      <edge source="Teumer Alexander" target="Nöthen Markus M" id="387" weight="12" />
+      <edge source="Teumer Alexander" target="Boomsma Dorret I" id="388" weight="34" />
+      <edge source="Teumer Alexander" target="Martin Nicholas G" id="389" weight="36" />
+      <edge source="Teumer Alexander" target="Stefansson Kari" id="390" weight="30" />
+      <edge source="Teumer Alexander" target="Kraft Peter" id="391" weight="12" />
+      <edge source="Teumer Alexander" target="Esko Tõnu" id="392" weight="27" />
+      <edge source="Teumer Alexander" target="Metspalu Andres" id="393" weight="35" />
+      <edge source="Teumer Alexander" target="Liu Jianjun" id="394" weight="8" />
+      <edge source="Teumer Alexander" target="Peters Annette" id="395" weight="35" />
+      <edge source="Teumer Alexander" target="Morris Andrew P" id="396" weight="26" />
+      <edge source="Teumer Alexander" target="Fornage Myriam" id="397" weight="24" />
+      <edge source="Teumer Alexander" target="Kubo Michiaki" id="398" weight="10" />
+      <edge source="Teumer Alexander" target="Zheng Wei" id="399" weight="4" />
+      <edge source="Teumer Alexander" target="Kamatani Yoichiro" id="400" weight="13" />
+      <edge source="Teumer Alexander" target="Taylor Kent D" id="401" weight="27" />
+      <edge source="Teumer Alexander" target="Hakonarson Hakon" id="402" weight="6" />
+      <edge source="Teumer Alexander" target="Shu Xiao-Ou" id="403" weight="2" />
+      <edge source="Teumer Alexander" target="Wang Zhe" id="404" weight="2" />
+      <edge source="Launer Lenore J" target="Harris Tamara B" id="405" weight="101" />
+      <edge source="Launer Lenore J" target="Smith Albert V" id="406" weight="66" />
+      <edge source="Launer Lenore J" target="Boerwinkle Eric" id="407" weight="56" />
+      <edge source="Launer Lenore J" target="Hofman Albert" id="408" weight="49" />
+      <edge source="Launer Lenore J" target="Chasman Daniel I" id="409" weight="44" />
+      <edge source="Launer Lenore J" target="Ridker Paul M" id="410" weight="40" />
+      <edge source="Launer Lenore J" target="Psaty Bruce M" id="411" weight="77" />
+      <edge source="Launer Lenore J" target="Meitinger Thomas" id="412" weight="24" />
+      <edge source="Launer Lenore J" target="Fornage Myriam" id="413" weight="54" />
+      <edge source="Launer Lenore J" target="Esko Tõnu" id="414" weight="23" />
+      <edge source="Launer Lenore J" target="Nöthen Markus M" id="415" weight="11" />
+      <edge source="Launer Lenore J" target="Metspalu Andres" id="416" weight="27" />
+      <edge source="Launer Lenore J" target="Ferrucci Luigi" id="417" weight="24" />
+      <edge source="Launer Lenore J" target="Hayward Caroline" id="418" weight="46" />
+      <edge source="Launer Lenore J" target="Campbell Harry" id="419" weight="25" />
+      <edge source="Launer Lenore J" target="Mägi Reedik" id="420" weight="25" />
+      <edge source="Launer Lenore J" target="Franke Andre" id="421" weight="11" />
+      <edge source="Launer Lenore J" target="Rudan Igor" id="422" weight="35" />
+      <edge source="Launer Lenore J" target="Wilson James F" id="423" weight="29" />
+      <edge source="Launer Lenore J" target="Salomaa Veikko" id="424" weight="21" />
+      <edge source="Launer Lenore J" target="McCarthy Mark I" id="425" weight="16" />
+      <edge source="Launer Lenore J" target="Martin Nicholas G" id="426" weight="25" />
+      <edge source="Launer Lenore J" target="Loos Ruth J F" id="427" weight="39" />
+      <edge source="Launer Lenore J" target="Gieger Christian" id="428" weight="30" />
+      <edge source="Launer Lenore J" target="Boomsma Dorret I" id="429" weight="23" />
+      <edge source="Launer Lenore J" target="Stefansson Kari" id="430" weight="22" />
+      <edge source="Launer Lenore J" target="Boehnke Michael" id="431" weight="23" />
+      <edge source="Launer Lenore J" target="Clarke Robert" id="432" weight="2" />
+      <edge source="Launer Lenore J" target="Kraft Peter" id="433" weight="12" />
+      <edge source="Launer Lenore J" target="Liu Jianjun" id="434" weight="14" />
+      <edge source="Launer Lenore J" target="Morris Andrew P" id="435" weight="21" />
+      <edge source="Launer Lenore J" target="Peters Annette" id="436" weight="30" />
+      <edge source="Launer Lenore J" target="Taylor Kent D" id="437" weight="34" />
+      <edge source="Launer Lenore J" target="Kubo Michiaki" id="438" weight="14" />
+      <edge source="Launer Lenore J" target="Medland Sarah E" id="439" weight="18" />
+      <edge source="Launer Lenore J" target="Hakonarson Hakon" id="440" weight="10" />
+      <edge source="Launer Lenore J" target="Kamatani Yoichiro" id="441" weight="17" />
+      <edge source="Launer Lenore J" target="Shu Xiao-Ou" id="442" weight="9" />
+      <edge source="Launer Lenore J" target="Zheng Wei" id="443" weight="9" />
+      <edge source="Launer Lenore J" target="Wang Zhe" id="444" weight="4" />
+      <edge source="Kraft Peter" target="Liu Jianjun" id="445" weight="16" />
+      <edge source="Kraft Peter" target="Ridker Paul M" id="446" weight="24" />
+      <edge source="Kraft Peter" target="Chasman Daniel I" id="447" weight="31" />
+      <edge source="Kraft Peter" target="Zheng Wei" id="448" weight="66" />
+      <edge source="Kraft Peter" target="Shu Xiao-Ou" id="449" weight="51" />
+      <edge source="Kraft Peter" target="Morris Andrew P" id="450" weight="12" />
+      <edge source="Kraft Peter" target="Boerwinkle Eric" id="451" weight="17" />
+      <edge source="Kraft Peter" target="Gieger Christian" id="452" weight="20" />
+      <edge source="Kraft Peter" target="Meitinger Thomas" id="453" weight="9" />
+      <edge source="Kraft Peter" target="Hofman Albert" id="454" weight="10" />
+      <edge source="Kraft Peter" target="Rudan Igor" id="455" weight="13" />
+      <edge source="Kraft Peter" target="Campbell Harry" id="456" weight="15" />
+      <edge source="Kraft Peter" target="Wilson James F" id="457" weight="18" />
+      <edge source="Kraft Peter" target="Stefansson Kari" id="458" weight="27" />
+      <edge source="Kraft Peter" target="Boehnke Michael" id="459" weight="11" />
+      <edge source="Kraft Peter" target="McCarthy Mark I" id="460" weight="14" />
+      <edge source="Kraft Peter" target="Martin Nicholas G" id="461" weight="26" />
+      <edge source="Kraft Peter" target="Nöthen Markus M" id="462" weight="5" />
+      <edge source="Kraft Peter" target="Mägi Reedik" id="463" weight="18" />
+      <edge source="Kraft Peter" target="Esko Tõnu" id="464" weight="15" />
+      <edge source="Kraft Peter" target="Clarke Robert" id="465" weight="2" />
+      <edge source="Kraft Peter" target="Hayward Caroline" id="466" weight="20" />
+      <edge source="Kraft Peter" target="Salomaa Veikko" id="467" weight="12" />
+      <edge source="Kraft Peter" target="Boomsma Dorret I" id="468" weight="19" />
+      <edge source="Kraft Peter" target="Harris Tamara B" id="469" weight="11" />
+      <edge source="Kraft Peter" target="Metspalu Andres" id="470" weight="15" />
+      <edge source="Kraft Peter" target="Peters Annette" id="471" weight="12" />
+      <edge source="Kraft Peter" target="Loos Ruth J F" id="472" weight="16" />
+      <edge source="Kraft Peter" target="Ferrucci Luigi" id="473" weight="13" />
+      <edge source="Kraft Peter" target="Smith Albert V" id="474" weight="11" />
+      <edge source="Kraft Peter" target="Psaty Bruce M" id="475" weight="13" />
+      <edge source="Kraft Peter" target="Fornage Myriam" id="476" weight="9" />
+      <edge source="Kraft Peter" target="Medland Sarah E" id="477" weight="12" />
+      <edge source="Kraft Peter" target="Kubo Michiaki" id="478" weight="12" />
+      <edge source="Kraft Peter" target="Taylor Kent D" id="479" weight="7" />
+      <edge source="Kraft Peter" target="Kamatani Yoichiro" id="480" weight="12" />
+      <edge source="Kraft Peter" target="Hakonarson Hakon" id="481" weight="7" />
+      <edge source="Kraft Peter" target="Franke Andre" id="482" weight="6" />
+      <edge source="Kraft Peter" target="Wang Zhe" id="483" weight="2" />
+      <edge source="Liu Jianjun" target="Mägi Reedik" id="484" weight="16" />
+      <edge source="Liu Jianjun" target="Esko Tõnu" id="485" weight="13" />
+      <edge source="Liu Jianjun" target="Chasman Daniel I" id="486" weight="18" />
+      <edge source="Liu Jianjun" target="Campbell Harry" id="487" weight="10" />
+      <edge source="Liu Jianjun" target="Clarke Robert" id="488" weight="3" />
+      <edge source="Liu Jianjun" target="Gieger Christian" id="489" weight="23" />
+      <edge source="Liu Jianjun" target="Hayward Caroline" id="490" weight="17" />
+      <edge source="Liu Jianjun" target="Hofman Albert" id="491" weight="6" />
+      <edge source="Liu Jianjun" target="Martin Nicholas G" id="492" weight="14" />
+      <edge source="Liu Jianjun" target="Meitinger Thomas" id="493" weight="18" />
+      <edge source="Liu Jianjun" target="Morris Andrew P" id="494" weight="17" />
+      <edge source="Liu Jianjun" target="Salomaa Veikko" id="495" weight="13" />
+      <edge source="Liu Jianjun" target="Ridker Paul M" id="496" weight="17" />
+      <edge source="Liu Jianjun" target="Boerwinkle Eric" id="497" weight="17" />
+      <edge source="Liu Jianjun" target="Boomsma Dorret I" id="498" weight="6" />
+      <edge source="Liu Jianjun" target="Harris Tamara B" id="499" weight="11" />
+      <edge source="Liu Jianjun" target="Metspalu Andres" id="500" weight="18" />
+      <edge source="Liu Jianjun" target="Peters Annette" id="501" weight="19" />
+      <edge source="Liu Jianjun" target="Rudan Igor" id="502" weight="13" />
+      <edge source="Liu Jianjun" target="Wilson James F" id="503" weight="11" />
+      <edge source="Liu Jianjun" target="Boehnke Michael" id="504" weight="21" />
+      <edge source="Liu Jianjun" target="Stefansson Kari" id="505" weight="14" />
+      <edge source="Liu Jianjun" target="McCarthy Mark I" id="506" weight="17" />
+      <edge source="Liu Jianjun" target="Loos Ruth J F" id="507" weight="22" />
+      <edge source="Liu Jianjun" target="Zheng Wei" id="508" weight="34" />
+      <edge source="Liu Jianjun" target="Shu Xiao-Ou" id="509" weight="31" />
+      <edge source="Liu Jianjun" target="Medland Sarah E" id="510" weight="3" />
+      <edge source="Liu Jianjun" target="Psaty Bruce M" id="511" weight="21" />
+      <edge source="Liu Jianjun" target="Smith Albert V" id="512" weight="9" />
+      <edge source="Liu Jianjun" target="Fornage Myriam" id="513" weight="13" />
+      <edge source="Liu Jianjun" target="Franke Andre" id="514" weight="10" />
+      <edge source="Liu Jianjun" target="Kubo Michiaki" id="515" weight="17" />
+      <edge source="Liu Jianjun" target="Kamatani Yoichiro" id="516" weight="19" />
+      <edge source="Liu Jianjun" target="Taylor Kent D" id="517" weight="16" />
+      <edge source="Liu Jianjun" target="Wang Zhe" id="518" weight="3" />
+      <edge source="Liu Jianjun" target="Hakonarson Hakon" id="519" weight="6" />
+      <edge source="Liu Jianjun" target="Ferrucci Luigi" id="520" weight="2" />
+      <edge source="Liu Jianjun" target="Nöthen Markus M" id="521" weight="2" />
+      <edge source="Fornage Myriam" target="Ridker Paul M" id="522" weight="28" />
+      <edge source="Fornage Myriam" target="Boerwinkle Eric" id="523" weight="101" />
+      <edge source="Fornage Myriam" target="Boehnke Michael" id="524" weight="24" />
+      <edge source="Fornage Myriam" target="McCarthy Mark I" id="525" weight="16" />
+      <edge source="Fornage Myriam" target="Hakonarson Hakon" id="526" weight="17" />
+      <edge source="Fornage Myriam" target="Psaty Bruce M" id="527" weight="87" />
+      <edge source="Fornage Myriam" target="Smith Albert V" id="528" weight="39" />
+      <edge source="Fornage Myriam" target="Harris Tamara B" id="529" weight="35" />
+      <edge source="Fornage Myriam" target="Hofman Albert" id="530" weight="30" />
+      <edge source="Fornage Myriam" target="Zheng Wei" id="531" weight="14" />
+      <edge source="Fornage Myriam" target="Taylor Kent D" id="532" weight="42" />
+      <edge source="Fornage Myriam" target="Loos Ruth J F" id="533" weight="48" />
+      <edge source="Fornage Myriam" target="Medland Sarah E" id="534" weight="11" />
+      <edge source="Fornage Myriam" target="Martin Nicholas G" id="535" weight="15" />
+      <edge source="Fornage Myriam" target="Ferrucci Luigi" id="536" weight="15" />
+      <edge source="Fornage Myriam" target="Gieger Christian" id="537" weight="24" />
+      <edge source="Fornage Myriam" target="Chasman Daniel I" id="538" weight="36" />
+      <edge source="Fornage Myriam" target="Hayward Caroline" id="539" weight="30" />
+      <edge source="Fornage Myriam" target="Rudan Igor" id="540" weight="21" />
+      <edge source="Fornage Myriam" target="Meitinger Thomas" id="541" weight="11" />
+      <edge source="Fornage Myriam" target="Campbell Harry" id="542" weight="7" />
+      <edge source="Fornage Myriam" target="Morris Andrew P" id="543" weight="17" />
+      <edge source="Fornage Myriam" target="Wilson James F" id="544" weight="12" />
+      <edge source="Fornage Myriam" target="Peters Annette" id="545" weight="28" />
+      <edge source="Fornage Myriam" target="Clarke Robert" id="546" weight="3" />
+      <edge source="Fornage Myriam" target="Metspalu Andres" id="547" weight="17" />
+      <edge source="Fornage Myriam" target="Salomaa Veikko" id="548" weight="15" />
+      <edge source="Fornage Myriam" target="Mägi Reedik" id="549" weight="16" />
+      <edge source="Fornage Myriam" target="Esko Tõnu" id="550" weight="16" />
+      <edge source="Fornage Myriam" target="Boomsma Dorret I" id="551" weight="15" />
+      <edge source="Fornage Myriam" target="Stefansson Kari" id="552" weight="14" />
+      <edge source="Fornage Myriam" target="Nöthen Markus M" id="553" weight="9" />
+      <edge source="Fornage Myriam" target="Franke Andre" id="554" weight="6" />
+      <edge source="Fornage Myriam" target="Kubo Michiaki" id="555" weight="7" />
+      <edge source="Fornage Myriam" target="Shu Xiao-Ou" id="556" weight="13" />
+      <edge source="Fornage Myriam" target="Kamatani Yoichiro" id="557" weight="13" />
+      <edge source="Fornage Myriam" target="Wang Zhe" id="558" weight="10" />
+      <edge source="Boehnke Michael" target="Boerwinkle Eric" id="559" weight="42" />
+      <edge source="Boehnke Michael" target="McCarthy Mark I" id="560" weight="52" />
+      <edge source="Boehnke Michael" target="Hakonarson Hakon" id="561" weight="8" />
+      <edge source="Boehnke Michael" target="Clarke Robert" id="562" weight="11" />
+      <edge source="Boehnke Michael" target="Ferrucci Luigi" id="563" weight="20" />
+      <edge source="Boehnke Michael" target="Salomaa Veikko" id="564" weight="45" />
+      <edge source="Boehnke Michael" target="Gieger Christian" id="565" weight="43" />
+      <edge source="Boehnke Michael" target="Meitinger Thomas" id="566" weight="27" />
+      <edge source="Boehnke Michael" target="Loos Ruth J F" id="567" weight="54" />
+      <edge source="Boehnke Michael" target="Mägi Reedik" id="568" weight="33" />
+      <edge source="Boehnke Michael" target="Morris Andrew P" id="569" weight="48" />
+      <edge source="Boehnke Michael" target="Hayward Caroline" id="570" weight="45" />
+      <edge source="Boehnke Michael" target="Hofman Albert" id="571" weight="23" />
+      <edge source="Boehnke Michael" target="Psaty Bruce M" id="572" weight="37" />
+      <edge source="Boehnke Michael" target="Rudan Igor" id="573" weight="36" />
+      <edge source="Boehnke Michael" target="Campbell Harry" id="574" weight="27" />
+      <edge source="Boehnke Michael" target="Wilson James F" id="575" weight="32" />
+      <edge source="Boehnke Michael" target="Boomsma Dorret I" id="576" weight="22" />
+      <edge source="Boehnke Michael" target="Stefansson Kari" id="577" weight="38" />
+      <edge source="Boehnke Michael" target="Smith Albert V" id="578" weight="23" />
+      <edge source="Boehnke Michael" target="Chasman Daniel I" id="579" weight="38" />
+      <edge source="Boehnke Michael" target="Martin Nicholas G" id="580" weight="24" />
+      <edge source="Boehnke Michael" target="Harris Tamara B" id="581" weight="27" />
+      <edge source="Boehnke Michael" target="Ridker Paul M" id="582" weight="36" />
+      <edge source="Boehnke Michael" target="Esko Tõnu" id="583" weight="29" />
+      <edge source="Boehnke Michael" target="Metspalu Andres" id="584" weight="37" />
+      <edge source="Boehnke Michael" target="Peters Annette" id="585" weight="37" />
+      <edge source="Boehnke Michael" target="Medland Sarah E" id="586" weight="9" />
+      <edge source="Boehnke Michael" target="Nöthen Markus M" id="587" weight="6" />
+      <edge source="Boehnke Michael" target="Taylor Kent D" id="588" weight="28" />
+      <edge source="Boehnke Michael" target="Kubo Michiaki" id="589" weight="11" />
+      <edge source="Boehnke Michael" target="Zheng Wei" id="590" weight="12" />
+      <edge source="Boehnke Michael" target="Kamatani Yoichiro" id="591" weight="14" />
+      <edge source="Boehnke Michael" target="Franke Andre" id="592" weight="10" />
+      <edge source="Boehnke Michael" target="Shu Xiao-Ou" id="593" weight="12" />
+      <edge source="Boehnke Michael" target="Wang Zhe" id="594" weight="5" />
+      <edge source="Rudan Igor" target="Mägi Reedik" id="595" weight="33" />
+      <edge source="Rudan Igor" target="Morris Andrew P" id="596" weight="33" />
+      <edge source="Rudan Igor" target="Gieger Christian" id="597" weight="51" />
+      <edge source="Rudan Igor" target="Boerwinkle Eric" id="598" weight="49" />
+      <edge source="Rudan Igor" target="Clarke Robert" id="599" weight="5" />
+      <edge source="Rudan Igor" target="Hayward Caroline" id="600" weight="79" />
+      <edge source="Rudan Igor" target="Hofman Albert" id="601" weight="36" />
+      <edge source="Rudan Igor" target="Psaty Bruce M" id="602" weight="44" />
+      <edge source="Rudan Igor" target="Loos Ruth J F" id="603" weight="40" />
+      <edge source="Rudan Igor" target="Salomaa Veikko" id="604" weight="34" />
+      <edge source="Rudan Igor" target="Campbell Harry" id="605" weight="67" />
+      <edge source="Rudan Igor" target="Wilson James F" id="606" weight="59" />
+      <edge source="Rudan Igor" target="Boomsma Dorret I" id="607" weight="24" />
+      <edge source="Rudan Igor" target="Ferrucci Luigi" id="608" weight="27" />
+      <edge source="Rudan Igor" target="Stefansson Kari" id="609" weight="36" />
+      <edge source="Rudan Igor" target="McCarthy Mark I" id="610" weight="27" />
+      <edge source="Rudan Igor" target="Smith Albert V" id="611" weight="36" />
+      <edge source="Rudan Igor" target="Harris Tamara B" id="612" weight="45" />
+      <edge source="Rudan Igor" target="Ridker Paul M" id="613" weight="38" />
+      <edge source="Rudan Igor" target="Franke Andre" id="614" weight="9" />
+      <edge source="Rudan Igor" target="Chasman Daniel I" id="615" weight="40" />
+      <edge source="Rudan Igor" target="Meitinger Thomas" id="616" weight="26" />
+      <edge source="Rudan Igor" target="Martin Nicholas G" id="617" weight="30" />
+      <edge source="Rudan Igor" target="Esko Tõnu" id="618" weight="31" />
+      <edge source="Rudan Igor" target="Metspalu Andres" id="619" weight="38" />
+      <edge source="Rudan Igor" target="Peters Annette" id="620" weight="33" />
+      <edge source="Rudan Igor" target="Medland Sarah E" id="621" weight="14" />
+      <edge source="Rudan Igor" target="Nöthen Markus M" id="622" weight="5" />
+      <edge source="Rudan Igor" target="Kubo Michiaki" id="623" weight="10" />
+      <edge source="Rudan Igor" target="Taylor Kent D" id="624" weight="26" />
+      <edge source="Rudan Igor" target="Zheng Wei" id="625" weight="8" />
+      <edge source="Rudan Igor" target="Kamatani Yoichiro" id="626" weight="10" />
+      <edge source="Rudan Igor" target="Hakonarson Hakon" id="627" weight="4" />
+      <edge source="Rudan Igor" target="Shu Xiao-Ou" id="628" weight="7" />
+      <edge source="Rudan Igor" target="Wang Zhe" id="629" weight="3" />
+      <edge source="Kubo Michiaki" target="Zheng Wei" id="630" weight="26" />
+      <edge source="Kubo Michiaki" target="Shu Xiao-Ou" id="631" weight="24" />
+      <edge source="Kubo Michiaki" target="Smith Albert V" id="632" weight="11" />
+      <edge source="Kubo Michiaki" target="Harris Tamara B" id="633" weight="14" />
+      <edge source="Kubo Michiaki" target="Hofman Albert" id="634" weight="12" />
+      <edge source="Kubo Michiaki" target="Boerwinkle Eric" id="635" weight="15" />
+      <edge source="Kubo Michiaki" target="Ridker Paul M" id="636" weight="19" />
+      <edge source="Kubo Michiaki" target="Psaty Bruce M" id="637" weight="20" />
+      <edge source="Kubo Michiaki" target="Meitinger Thomas" id="638" weight="9" />
+      <edge source="Kubo Michiaki" target="Chasman Daniel I" id="639" weight="20" />
+      <edge source="Kubo Michiaki" target="Hayward Caroline" id="640" weight="17" />
+      <edge source="Kubo Michiaki" target="Ferrucci Luigi" id="641" weight="4" />
+      <edge source="Kubo Michiaki" target="Campbell Harry" id="642" weight="10" />
+      <edge source="Kubo Michiaki" target="Gieger Christian" id="643" weight="15" />
+      <edge source="Kubo Michiaki" target="Wilson James F" id="644" weight="10" />
+      <edge source="Kubo Michiaki" target="Morris Andrew P" id="645" weight="18" />
+      <edge source="Kubo Michiaki" target="Esko Tõnu" id="646" weight="7" />
+      <edge source="Kubo Michiaki" target="Metspalu Andres" id="647" weight="12" />
+      <edge source="Kubo Michiaki" target="Kamatani Yoichiro" id="648" weight="70" />
+      <edge source="Kubo Michiaki" target="Peters Annette" id="649" weight="13" />
+      <edge source="Kubo Michiaki" target="Taylor Kent D" id="650" weight="15" />
+      <edge source="Kubo Michiaki" target="Mägi Reedik" id="651" weight="10" />
+      <edge source="Kubo Michiaki" target="Medland Sarah E" id="652" weight="4" />
+      <edge source="Kubo Michiaki" target="Clarke Robert" id="653" weight="2" />
+      <edge source="Kubo Michiaki" target="Nöthen Markus M" id="654" weight="3" />
+      <edge source="Kubo Michiaki" target="Salomaa Veikko" id="655" weight="11" />
+      <edge source="Kubo Michiaki" target="Martin Nicholas G" id="656" weight="16" />
+      <edge source="Kubo Michiaki" target="Stefansson Kari" id="657" weight="14" />
+      <edge source="Kubo Michiaki" target="McCarthy Mark I" id="658" weight="5" />
+      <edge source="Kubo Michiaki" target="Loos Ruth J F" id="659" weight="16" />
+      <edge source="Kubo Michiaki" target="Hakonarson Hakon" id="660" weight="7" />
+      <edge source="Kubo Michiaki" target="Boomsma Dorret I" id="661" weight="6" />
+      <edge source="Kubo Michiaki" target="Franke Andre" id="662" weight="9" />
+      <edge source="Kubo Michiaki" target="Wang Zhe" id="663" weight="1" />
+      <edge source="Boomsma Dorret I" target="Mägi Reedik" id="664" weight="28" />
+      <edge source="Boomsma Dorret I" target="Morris Andrew P" id="665" weight="17" />
+      <edge source="Boomsma Dorret I" target="Gieger Christian" id="666" weight="38" />
+      <edge source="Boomsma Dorret I" target="Boerwinkle Eric" id="667" weight="26" />
+      <edge source="Boomsma Dorret I" target="Clarke Robert" id="668" weight="4" />
+      <edge source="Boomsma Dorret I" target="Hayward Caroline" id="669" weight="37" />
+      <edge source="Boomsma Dorret I" target="Hofman Albert" id="670" weight="36" />
+      <edge source="Boomsma Dorret I" target="Psaty Bruce M" id="671" weight="26" />
+      <edge source="Boomsma Dorret I" target="Loos Ruth J F" id="672" weight="33" />
+      <edge source="Boomsma Dorret I" target="Salomaa Veikko" id="673" weight="29" />
+      <edge source="Boomsma Dorret I" target="Campbell Harry" id="674" weight="27" />
+      <edge source="Boomsma Dorret I" target="Wilson James F" id="675" weight="31" />
+      <edge source="Boomsma Dorret I" target="Ferrucci Luigi" id="676" weight="24" />
+      <edge source="Boomsma Dorret I" target="Stefansson Kari" id="677" weight="42" />
+      <edge source="Boomsma Dorret I" target="McCarthy Mark I" id="678" weight="28" />
+      <edge source="Boomsma Dorret I" target="Esko Tõnu" id="679" weight="30" />
+      <edge source="Boomsma Dorret I" target="Martin Nicholas G" id="680" weight="77" />
+      <edge source="Boomsma Dorret I" target="Metspalu Andres" id="681" weight="37" />
+      <edge source="Boomsma Dorret I" target="Smith Albert V" id="682" weight="21" />
+      <edge source="Boomsma Dorret I" target="Chasman Daniel I" id="683" weight="32" />
+      <edge source="Boomsma Dorret I" target="Meitinger Thomas" id="684" weight="14" />
+      <edge source="Boomsma Dorret I" target="Harris Tamara B" id="685" weight="20" />
+      <edge source="Boomsma Dorret I" target="Ridker Paul M" id="686" weight="29" />
+      <edge source="Boomsma Dorret I" target="Peters Annette" id="687" weight="24" />
+      <edge source="Boomsma Dorret I" target="Medland Sarah E" id="688" weight="50" />
+      <edge source="Boomsma Dorret I" target="Nöthen Markus M" id="689" weight="15" />
+      <edge source="Boomsma Dorret I" target="Hakonarson Hakon" id="690" weight="15" />
+      <edge source="Boomsma Dorret I" target="Kamatani Yoichiro" id="691" weight="9" />
+      <edge source="Boomsma Dorret I" target="Taylor Kent D" id="692" weight="9" />
+      <edge source="Boomsma Dorret I" target="Zheng Wei" id="693" weight="6" />
+      <edge source="Boomsma Dorret I" target="Franke Andre" id="694" weight="7" />
+      <edge source="Boomsma Dorret I" target="Shu Xiao-Ou" id="695" weight="4" />
+      <edge source="Boomsma Dorret I" target="Wang Zhe" id="696" weight="3" />
+      <edge source="Ridker Paul M" target="Boerwinkle Eric" id="697" weight="59" />
+      <edge source="Ridker Paul M" target="Chasman Daniel I" id="698" weight="141" />
+      <edge source="Ridker Paul M" target="Ferrucci Luigi" id="699" weight="30" />
+      <edge source="Ridker Paul M" target="Harris Tamara B" id="700" weight="46" />
+      <edge source="Ridker Paul M" target="Smith Albert V" id="701" weight="36" />
+      <edge source="Ridker Paul M" target="Hofman Albert" id="702" weight="42" />
+      <edge source="Ridker Paul M" target="Hayward Caroline" id="703" weight="53" />
+      <edge source="Ridker Paul M" target="Psaty Bruce M" id="704" weight="57" />
+      <edge source="Ridker Paul M" target="Campbell Harry" id="705" weight="31" />
+      <edge source="Ridker Paul M" target="Mägi Reedik" id="706" weight="35" />
+      <edge source="Ridker Paul M" target="Franke Andre" id="707" weight="11" />
+      <edge source="Ridker Paul M" target="Wilson James F" id="708" weight="35" />
+      <edge source="Ridker Paul M" target="Salomaa Veikko" id="709" weight="41" />
+      <edge source="Ridker Paul M" target="Meitinger Thomas" id="710" weight="25" />
+      <edge source="Ridker Paul M" target="McCarthy Mark I" id="711" weight="27" />
+      <edge source="Ridker Paul M" target="Martin Nicholas G" id="712" weight="35" />
+      <edge source="Ridker Paul M" target="Loos Ruth J F" id="713" weight="44" />
+      <edge source="Ridker Paul M" target="Gieger Christian" id="714" weight="41" />
+      <edge source="Ridker Paul M" target="Stefansson Kari" id="715" weight="40" />
+      <edge source="Ridker Paul M" target="Esko Tõnu" id="716" weight="32" />
+      <edge source="Ridker Paul M" target="Clarke Robert" id="717" weight="6" />
+      <edge source="Ridker Paul M" target="Morris Andrew P" id="718" weight="35" />
+      <edge source="Ridker Paul M" target="Metspalu Andres" id="719" weight="40" />
+      <edge source="Ridker Paul M" target="Peters Annette" id="720" weight="37" />
+      <edge source="Ridker Paul M" target="Medland Sarah E" id="721" weight="14" />
+      <edge source="Ridker Paul M" target="Hakonarson Hakon" id="722" weight="12" />
+      <edge source="Ridker Paul M" target="Taylor Kent D" id="723" weight="33" />
+      <edge source="Ridker Paul M" target="Nöthen Markus M" id="724" weight="3" />
+      <edge source="Ridker Paul M" target="Zheng Wei" id="725" weight="12" />
+      <edge source="Ridker Paul M" target="Kamatani Yoichiro" id="726" weight="20" />
+      <edge source="Ridker Paul M" target="Shu Xiao-Ou" id="727" weight="10" />
+      <edge source="Ridker Paul M" target="Wang Zhe" id="728" weight="4" />
+      <edge source="Zheng Wei" target="Shu Xiao-Ou" id="729" weight="282" />
+      <edge source="Zheng Wei" target="Chasman Daniel I" id="730" weight="13" />
+      <edge source="Zheng Wei" target="Martin Nicholas G" id="731" weight="10" />
+      <edge source="Zheng Wei" target="Hakonarson Hakon" id="732" weight="7" />
+      <edge source="Zheng Wei" target="Psaty Bruce M" id="733" weight="13" />
+      <edge source="Zheng Wei" target="Loos Ruth J F" id="734" weight="13" />
+      <edge source="Zheng Wei" target="Taylor Kent D" id="735" weight="10" />
+      <edge source="Zheng Wei" target="Mägi Reedik" id="736" weight="12" />
+      <edge source="Zheng Wei" target="Medland Sarah E" id="737" weight="3" />
+      <edge source="Zheng Wei" target="Clarke Robert" id="738" weight="3" />
+      <edge source="Zheng Wei" target="Hayward Caroline" id="739" weight="14" />
+      <edge source="Zheng Wei" target="Nöthen Markus M" id="740" weight="2" />
+      <edge source="Zheng Wei" target="Campbell Harry" id="741" weight="7" />
+      <edge source="Zheng Wei" target="Gieger Christian" id="742" weight="14" />
+      <edge source="Zheng Wei" target="Harris Tamara B" id="743" weight="7" />
+      <edge source="Zheng Wei" target="Hofman Albert" id="744" weight="4" />
+      <edge source="Zheng Wei" target="Morris Andrew P" id="745" weight="10" />
+      <edge source="Zheng Wei" target="Peters Annette" id="746" weight="14" />
+      <edge source="Zheng Wei" target="Salomaa Veikko" id="747" weight="5" />
+      <edge source="Zheng Wei" target="Boerwinkle Eric" id="748" weight="9" />
+      <edge source="Zheng Wei" target="Ferrucci Luigi" id="749" weight="4" />
+      <edge source="Zheng Wei" target="Metspalu Andres" id="750" weight="11" />
+      <edge source="Zheng Wei" target="Wilson James F" id="751" weight="8" />
+      <edge source="Zheng Wei" target="Stefansson Kari" id="752" weight="10" />
+      <edge source="Zheng Wei" target="McCarthy Mark I" id="753" weight="11" />
+      <edge source="Zheng Wei" target="Esko Tõnu" id="754" weight="8" />
+      <edge source="Zheng Wei" target="Smith Albert V" id="755" weight="7" />
+      <edge source="Zheng Wei" target="Meitinger Thomas" id="756" weight="8" />
+      <edge source="Zheng Wei" target="Franke Andre" id="757" weight="5" />
+      <edge source="Zheng Wei" target="Kamatani Yoichiro" id="758" weight="14" />
+      <edge source="Zheng Wei" target="Wang Zhe" id="759" weight="3" />
+      <edge source="Clarke Robert" target="Ferrucci Luigi" id="760" weight="7" />
+      <edge source="Clarke Robert" target="Salomaa Veikko" id="761" weight="11" />
+      <edge source="Clarke Robert" target="Gieger Christian" id="762" weight="9" />
+      <edge source="Clarke Robert" target="Meitinger Thomas" id="763" weight="7" />
+      <edge source="Clarke Robert" target="McCarthy Mark I" id="764" weight="7" />
+      <edge source="Clarke Robert" target="Loos Ruth J F" id="765" weight="9" />
+      <edge source="Clarke Robert" target="Mägi Reedik" id="766" weight="6" />
+      <edge source="Clarke Robert" target="Morris Andrew P" id="767" weight="8" />
+      <edge source="Clarke Robert" target="Boerwinkle Eric" id="768" weight="10" />
+      <edge source="Clarke Robert" target="Hayward Caroline" id="769" weight="6" />
+      <edge source="Clarke Robert" target="Hofman Albert" id="770" weight="9" />
+      <edge source="Clarke Robert" target="Psaty Bruce M" id="771" weight="5" />
+      <edge source="Clarke Robert" target="Campbell Harry" id="772" weight="6" />
+      <edge source="Clarke Robert" target="Wilson James F" id="773" weight="6" />
+      <edge source="Clarke Robert" target="Stefansson Kari" id="774" weight="7" />
+      <edge source="Clarke Robert" target="Esko Tõnu" id="775" weight="4" />
+      <edge source="Clarke Robert" target="Chasman Daniel I" id="776" weight="6" />
+      <edge source="Clarke Robert" target="Martin Nicholas G" id="777" weight="4" />
+      <edge source="Clarke Robert" target="Harris Tamara B" id="778" weight="7" />
+      <edge source="Clarke Robert" target="Metspalu Andres" id="779" weight="8" />
+      <edge source="Clarke Robert" target="Peters Annette" id="780" weight="9" />
+      <edge source="Clarke Robert" target="Hakonarson Hakon" id="781" weight="2" />
+      <edge source="Clarke Robert" target="Nöthen Markus M" id="782" weight="4" />
+      <edge source="Clarke Robert" target="Medland Sarah E" id="783" weight="1" />
+      <edge source="Clarke Robert" target="Smith Albert V" id="784" weight="3" />
+      <edge source="Clarke Robert" target="Franke Andre" id="785" weight="1" />
+      <edge source="Clarke Robert" target="Shu Xiao-Ou" id="786" weight="2" />
+      <edge source="Clarke Robert" target="Kamatani Yoichiro" id="787" weight="3" />
+      <edge source="Clarke Robert" target="Wang Zhe" id="788" weight="1" />
+      <edge source="Chasman Daniel I" target="Boerwinkle Eric" id="789" weight="65" />
+      <edge source="Chasman Daniel I" target="Harris Tamara B" id="790" weight="49" />
+      <edge source="Chasman Daniel I" target="Smith Albert V" id="791" weight="40" />
+      <edge source="Chasman Daniel I" target="Hofman Albert" id="792" weight="44" />
+      <edge source="Chasman Daniel I" target="Hayward Caroline" id="793" weight="55" />
+      <edge source="Chasman Daniel I" target="Psaty Bruce M" id="794" weight="65" />
+      <edge source="Chasman Daniel I" target="Campbell Harry" id="795" weight="31" />
+      <edge source="Chasman Daniel I" target="Mägi Reedik" id="796" weight="37" />
+      <edge source="Chasman Daniel I" target="Franke Andre" id="797" weight="11" />
+      <edge source="Chasman Daniel I" target="Ferrucci Luigi" id="798" weight="26" />
+      <edge source="Chasman Daniel I" target="Wilson James F" id="799" weight="35" />
+      <edge source="Chasman Daniel I" target="Salomaa Veikko" id="800" weight="40" />
+      <edge source="Chasman Daniel I" target="Meitinger Thomas" id="801" weight="27" />
+      <edge source="Chasman Daniel I" target="McCarthy Mark I" id="802" weight="28" />
+      <edge source="Chasman Daniel I" target="Martin Nicholas G" id="803" weight="39" />
+      <edge source="Chasman Daniel I" target="Loos Ruth J F" id="804" weight="49" />
+      <edge source="Chasman Daniel I" target="Gieger Christian" id="805" weight="44" />
+      <edge source="Chasman Daniel I" target="Stefansson Kari" id="806" weight="43" />
+      <edge source="Chasman Daniel I" target="Esko Tõnu" id="807" weight="35" />
+      <edge source="Chasman Daniel I" target="Morris Andrew P" id="808" weight="35" />
+      <edge source="Chasman Daniel I" target="Metspalu Andres" id="809" weight="43" />
+      <edge source="Chasman Daniel I" target="Peters Annette" id="810" weight="37" />
+      <edge source="Chasman Daniel I" target="Medland Sarah E" id="811" weight="16" />
+      <edge source="Chasman Daniel I" target="Hakonarson Hakon" id="812" weight="14" />
+      <edge source="Chasman Daniel I" target="Taylor Kent D" id="813" weight="39" />
+      <edge source="Chasman Daniel I" target="Nöthen Markus M" id="814" weight="4" />
+      <edge source="Chasman Daniel I" target="Kamatani Yoichiro" id="815" weight="22" />
+      <edge source="Chasman Daniel I" target="Shu Xiao-Ou" id="816" weight="10" />
+      <edge source="Chasman Daniel I" target="Wang Zhe" id="817" weight="4" />
+      <edge source="Salomaa Veikko" target="Boerwinkle Eric" id="818" weight="36" />
+      <edge source="Salomaa Veikko" target="Ferrucci Luigi" id="819" weight="23" />
+      <edge source="Salomaa Veikko" target="Salomaa Veikko" id="820" weight="3" />
+      <edge source="Salomaa Veikko" target="Stefansson Kari" id="821" weight="47" />
+      <edge source="Salomaa Veikko" target="Gieger Christian" id="822" weight="40" />
+      <edge source="Salomaa Veikko" target="Meitinger Thomas" id="823" weight="25" />
+      <edge source="Salomaa Veikko" target="McCarthy Mark I" id="824" weight="38" />
+      <edge source="Salomaa Veikko" target="Loos Ruth J F" id="825" weight="42" />
+      <edge source="Salomaa Veikko" target="Mägi Reedik" id="826" weight="33" />
+      <edge source="Salomaa Veikko" target="Morris Andrew P" id="827" weight="40" />
+      <edge source="Salomaa Veikko" target="Hayward Caroline" id="828" weight="43" />
+      <edge source="Salomaa Veikko" target="Hofman Albert" id="829" weight="31" />
+      <edge source="Salomaa Veikko" target="Psaty Bruce M" id="830" weight="35" />
+      <edge source="Salomaa Veikko" target="Campbell Harry" id="831" weight="34" />
+      <edge source="Salomaa Veikko" target="Wilson James F" id="832" weight="34" />
+      <edge source="Salomaa Veikko" target="Esko Tõnu" id="833" weight="34" />
+      <edge source="Salomaa Veikko" target="Martin Nicholas G" id="834" weight="29" />
+      <edge source="Salomaa Veikko" target="Metspalu Andres" id="835" weight="48" />
+      <edge source="Salomaa Veikko" target="Smith Albert V" id="836" weight="18" />
+      <edge source="Salomaa Veikko" target="Harris Tamara B" id="837" weight="30" />
+      <edge source="Salomaa Veikko" target="Peters Annette" id="838" weight="36" />
+      <edge source="Salomaa Veikko" target="Hakonarson Hakon" id="839" weight="11" />
+      <edge source="Salomaa Veikko" target="Medland Sarah E" id="840" weight="11" />
+      <edge source="Salomaa Veikko" target="Nöthen Markus M" id="841" weight="10" />
+      <edge source="Salomaa Veikko" target="Franke Andre" id="842" weight="9" />
+      <edge source="Salomaa Veikko" target="Kamatani Yoichiro" id="843" weight="13" />
+      <edge source="Salomaa Veikko" target="Taylor Kent D" id="844" weight="20" />
+      <edge source="Salomaa Veikko" target="Shu Xiao-Ou" id="845" weight="4" />
+      <edge source="Salomaa Veikko" target="Wang Zhe" id="846" weight="2" />
+      <edge source="Hofman Albert" target="Psaty Bruce M" id="847" weight="72" />
+      <edge source="Hofman Albert" target="Harris Tamara B" id="848" weight="65" />
+      <edge source="Hofman Albert" target="Smith Albert V" id="849" weight="52" />
+      <edge source="Hofman Albert" target="Boerwinkle Eric" id="850" weight="54" />
+      <edge source="Hofman Albert" target="Meitinger Thomas" id="851" weight="28" />
+      <edge source="Hofman Albert" target="Mägi Reedik" id="852" weight="27" />
+      <edge source="Hofman Albert" target="Morris Andrew P" id="853" weight="25" />
+      <edge source="Hofman Albert" target="Gieger Christian" id="854" weight="40" />
+      <edge source="Hofman Albert" target="Hayward Caroline" id="855" weight="44" />
+      <edge source="Hofman Albert" target="Loos Ruth J F" id="856" weight="37" />
+      <edge source="Hofman Albert" target="Campbell Harry" id="857" weight="33" />
+      <edge source="Hofman Albert" target="Wilson James F" id="858" weight="40" />
+      <edge source="Hofman Albert" target="Ferrucci Luigi" id="859" weight="37" />
+      <edge source="Hofman Albert" target="Stefansson Kari" id="860" weight="30" />
+      <edge source="Hofman Albert" target="McCarthy Mark I" id="861" weight="26" />
+      <edge source="Hofman Albert" target="Esko Tõnu" id="862" weight="26" />
+      <edge source="Hofman Albert" target="Nöthen Markus M" id="863" weight="10" />
+      <edge source="Hofman Albert" target="Metspalu Andres" id="864" weight="37" />
+      <edge source="Hofman Albert" target="Martin Nicholas G" id="865" weight="30" />
+      <edge source="Hofman Albert" target="Franke Andre" id="866" weight="8" />
+      <edge source="Hofman Albert" target="Peters Annette" id="867" weight="28" />
+      <edge source="Hofman Albert" target="Taylor Kent D" id="868" weight="17" />
+      <edge source="Hofman Albert" target="Medland Sarah E" id="869" weight="12" />
+      <edge source="Hofman Albert" target="Hakonarson Hakon" id="870" weight="12" />
+      <edge source="Hofman Albert" target="Kamatani Yoichiro" id="871" weight="6" />
+      <edge source="Hofman Albert" target="Shu Xiao-Ou" id="872" weight="3" />
+      <edge source="Hofman Albert" target="Wang Zhe" id="873" weight="1" />
+      <edge source="Stefansson Kari" target="Metspalu Andres" id="874" weight="41" />
+      <edge source="Stefansson Kari" target="Mägi Reedik" id="875" weight="35" />
+      <edge source="Stefansson Kari" target="Morris Andrew P" id="876" weight="40" />
+      <edge source="Stefansson Kari" target="Gieger Christian" id="877" weight="42" />
+      <edge source="Stefansson Kari" target="Boerwinkle Eric" id="878" weight="37" />
+      <edge source="Stefansson Kari" target="Hayward Caroline" id="879" weight="46" />
+      <edge source="Stefansson Kari" target="Psaty Bruce M" id="880" weight="34" />
+      <edge source="Stefansson Kari" target="Loos Ruth J F" id="881" weight="37" />
+      <edge source="Stefansson Kari" target="Campbell Harry" id="882" weight="30" />
+      <edge source="Stefansson Kari" target="Wilson James F" id="883" weight="36" />
+      <edge source="Stefansson Kari" target="Ferrucci Luigi" id="884" weight="19" />
+      <edge source="Stefansson Kari" target="McCarthy Mark I" id="885" weight="36" />
+      <edge source="Stefansson Kari" target="Esko Tõnu" id="886" weight="33" />
+      <edge source="Stefansson Kari" target="Martin Nicholas G" id="887" weight="47" />
+      <edge source="Stefansson Kari" target="Meitinger Thomas" id="888" weight="29" />
+      <edge source="Stefansson Kari" target="Smith Albert V" id="889" weight="24" />
+      <edge source="Stefansson Kari" target="Harris Tamara B" id="890" weight="30" />
+      <edge source="Stefansson Kari" target="Peters Annette" id="891" weight="33" />
+      <edge source="Stefansson Kari" target="Hakonarson Hakon" id="892" weight="11" />
+      <edge source="Stefansson Kari" target="Medland Sarah E" id="893" weight="23" />
+      <edge source="Stefansson Kari" target="Nöthen Markus M" id="894" weight="16" />
+      <edge source="Stefansson Kari" target="Franke Andre" id="895" weight="15" />
+      <edge source="Stefansson Kari" target="Taylor Kent D" id="896" weight="23" />
+      <edge source="Stefansson Kari" target="Kamatani Yoichiro" id="897" weight="20" />
+      <edge source="Stefansson Kari" target="Shu Xiao-Ou" id="898" weight="6" />
+      <edge source="Stefansson Kari" target="Wang Zhe" id="899" weight="3" />
+      <edge source="Ferrucci Luigi" target="Gieger Christian" id="900" weight="30" />
+      <edge source="Ferrucci Luigi" target="Meitinger Thomas" id="901" weight="15" />
+      <edge source="Ferrucci Luigi" target="McCarthy Mark I" id="902" weight="18" />
+      <edge source="Ferrucci Luigi" target="Loos Ruth J F" id="903" weight="24" />
+      <edge source="Ferrucci Luigi" target="Mägi Reedik" id="904" weight="19" />
+      <edge source="Ferrucci Luigi" target="Morris Andrew P" id="905" weight="15" />
+      <edge source="Ferrucci Luigi" target="Boerwinkle Eric" id="906" weight="30" />
+      <edge source="Ferrucci Luigi" target="Hayward Caroline" id="907" weight="33" />
+      <edge source="Ferrucci Luigi" target="Psaty Bruce M" id="908" weight="37" />
+      <edge source="Ferrucci Luigi" target="Campbell Harry" id="909" weight="26" />
+      <edge source="Ferrucci Luigi" target="Wilson James F" id="910" weight="32" />
+      <edge source="Ferrucci Luigi" target="Harris Tamara B" id="911" weight="34" />
+      <edge source="Ferrucci Luigi" target="Smith Albert V" id="912" weight="26" />
+      <edge source="Ferrucci Luigi" target="Franke Andre" id="913" weight="6" />
+      <edge source="Ferrucci Luigi" target="Martin Nicholas G" id="914" weight="22" />
+      <edge source="Ferrucci Luigi" target="Esko Tõnu" id="915" weight="16" />
+      <edge source="Ferrucci Luigi" target="Metspalu Andres" id="916" weight="24" />
+      <edge source="Ferrucci Luigi" target="Nöthen Markus M" id="917" weight="7" />
+      <edge source="Ferrucci Luigi" target="Peters Annette" id="918" weight="26" />
+      <edge source="Ferrucci Luigi" target="Kamatani Yoichiro" id="919" weight="3" />
+      <edge source="Ferrucci Luigi" target="Medland Sarah E" id="920" weight="10" />
+      <edge source="Ferrucci Luigi" target="Taylor Kent D" id="921" weight="9" />
+      <edge source="Ferrucci Luigi" target="Hakonarson Hakon" id="922" weight="2" />
+      <edge source="Ferrucci Luigi" target="Shu Xiao-Ou" id="923" weight="2" />
+      <edge source="Ferrucci Luigi" target="Wang Zhe" id="924" weight="2" />
+      <edge source="Loos Ruth J F" target="Gieger Christian" id="925" weight="49" />
+      <edge source="Loos Ruth J F" target="Meitinger Thomas" id="926" weight="34" />
+      <edge source="Loos Ruth J F" target="McCarthy Mark I" id="927" weight="39" />
+      <edge source="Loos Ruth J F" target="Mägi Reedik" id="928" weight="37" />
+      <edge source="Loos Ruth J F" target="Morris Andrew P" id="929" weight="50" />
+      <edge source="Loos Ruth J F" target="Boerwinkle Eric" id="930" weight="71" />
+      <edge source="Loos Ruth J F" target="Hayward Caroline" id="931" weight="55" />
+      <edge source="Loos Ruth J F" target="Psaty Bruce M" id="932" weight="73" />
+      <edge source="Loos Ruth J F" target="Campbell Harry" id="933" weight="30" />
+      <edge source="Loos Ruth J F" target="Wilson James F" id="934" weight="35" />
+      <edge source="Loos Ruth J F" target="Harris Tamara B" id="935" weight="46" />
+      <edge source="Loos Ruth J F" target="Smith Albert V" id="936" weight="40" />
+      <edge source="Loos Ruth J F" target="Martin Nicholas G" id="937" weight="33" />
+      <edge source="Loos Ruth J F" target="Esko Tõnu" id="938" weight="33" />
+      <edge source="Loos Ruth J F" target="Metspalu Andres" id="939" weight="42" />
+      <edge source="Loos Ruth J F" target="Peters Annette" id="940" weight="40" />
+      <edge source="Loos Ruth J F" target="Medland Sarah E" id="941" weight="16" />
+      <edge source="Loos Ruth J F" target="Hakonarson Hakon" id="942" weight="10" />
+      <edge source="Loos Ruth J F" target="Taylor Kent D" id="943" weight="52" />
+      <edge source="Loos Ruth J F" target="Nöthen Markus M" id="944" weight="5" />
+      <edge source="Loos Ruth J F" target="Franke Andre" id="945" weight="13" />
+      <edge source="Loos Ruth J F" target="Kamatani Yoichiro" id="946" weight="20" />
+      <edge source="Loos Ruth J F" target="Shu Xiao-Ou" id="947" weight="11" />
+      <edge source="Loos Ruth J F" target="Wang Zhe" id="948" weight="14" />
+      <edge source="Psaty Bruce M" target="Harris Tamara B" id="949" weight="86" />
+      <edge source="Psaty Bruce M" target="Boerwinkle Eric" id="950" weight="121" />
+      <edge source="Psaty Bruce M" target="Smith Albert V" id="951" weight="73" />
+      <edge source="Psaty Bruce M" target="Meitinger Thomas" id="952" weight="39" />
+      <edge source="Psaty Bruce M" target="Mägi Reedik" id="953" weight="28" />
+      <edge source="Psaty Bruce M" target="Morris Andrew P" id="954" weight="38" />
+      <edge source="Psaty Bruce M" target="Gieger Christian" id="955" weight="46" />
+      <edge source="Psaty Bruce M" target="Hayward Caroline" id="956" weight="66" />
+      <edge source="Psaty Bruce M" target="Campbell Harry" id="957" weight="37" />
+      <edge source="Psaty Bruce M" target="Wilson James F" id="958" weight="44" />
+      <edge source="Psaty Bruce M" target="McCarthy Mark I" id="959" weight="23" />
+      <edge source="Psaty Bruce M" target="Esko Tõnu" id="960" weight="27" />
+      <edge source="Psaty Bruce M" target="Nöthen Markus M" id="961" weight="9" />
+      <edge source="Psaty Bruce M" target="Metspalu Andres" id="962" weight="33" />
+      <edge source="Psaty Bruce M" target="Franke Andre" id="963" weight="12" />
+      <edge source="Psaty Bruce M" target="Martin Nicholas G" id="964" weight="27" />
+      <edge source="Psaty Bruce M" target="Taylor Kent D" id="965" weight="68" />
+      <edge source="Psaty Bruce M" target="Peters Annette" id="966" weight="50" />
+      <edge source="Psaty Bruce M" target="Medland Sarah E" id="967" weight="10" />
+      <edge source="Psaty Bruce M" target="Hakonarson Hakon" id="968" weight="11" />
+      <edge source="Psaty Bruce M" target="Kamatani Yoichiro" id="969" weight="22" />
+      <edge source="Psaty Bruce M" target="Shu Xiao-Ou" id="970" weight="11" />
+      <edge source="Psaty Bruce M" target="Wang Zhe" id="971" weight="7" />
+      <edge source="Harris Tamara B" target="Boerwinkle Eric" id="972" weight="63" />
+      <edge source="Harris Tamara B" target="Smith Albert V" id="973" weight="71" />
+      <edge source="Harris Tamara B" target="Meitinger Thomas" id="974" weight="28" />
+      <edge source="Harris Tamara B" target="Esko Tõnu" id="975" weight="30" />
+      <edge source="Harris Tamara B" target="Nöthen Markus M" id="976" weight="5" />
+      <edge source="Harris Tamara B" target="Metspalu Andres" id="977" weight="37" />
+      <edge source="Harris Tamara B" target="Hayward Caroline" id="978" weight="53" />
+      <edge source="Harris Tamara B" target="Campbell Harry" id="979" weight="33" />
+      <edge source="Harris Tamara B" target="Mägi Reedik" id="980" weight="31" />
+      <edge source="Harris Tamara B" target="Franke Andre" id="981" weight="8" />
+      <edge source="Harris Tamara B" target="Wilson James F" id="982" weight="34" />
+      <edge source="Harris Tamara B" target="McCarthy Mark I" id="983" weight="21" />
+      <edge source="Harris Tamara B" target="Martin Nicholas G" id="984" weight="25" />
+      <edge source="Harris Tamara B" target="Gieger Christian" id="985" weight="37" />
+      <edge source="Harris Tamara B" target="Morris Andrew P" id="986" weight="30" />
+      <edge source="Harris Tamara B" target="Peters Annette" id="987" weight="32" />
+      <edge source="Harris Tamara B" target="Taylor Kent D" id="988" weight="36" />
+      <edge source="Harris Tamara B" target="Hakonarson Hakon" id="989" weight="5" />
+      <edge source="Harris Tamara B" target="Medland Sarah E" id="990" weight="11" />
+      <edge source="Harris Tamara B" target="Kamatani Yoichiro" id="991" weight="10" />
+      <edge source="Harris Tamara B" target="Shu Xiao-Ou" id="992" weight="5" />
+      <edge source="Harris Tamara B" target="Wang Zhe" id="993" weight="1" />
+      <edge source="Morris Andrew P" target="Mägi Reedik" id="994" weight="37" />
+      <edge source="Morris Andrew P" target="Gieger Christian" id="995" weight="40" />
+      <edge source="Morris Andrew P" target="Boerwinkle Eric" id="996" weight="38" />
+      <edge source="Morris Andrew P" target="Hayward Caroline" id="997" weight="45" />
+      <edge source="Morris Andrew P" target="Campbell Harry" id="998" weight="29" />
+      <edge source="Morris Andrew P" target="Wilson James F" id="999" weight="36" />
+      <edge source="Morris Andrew P" target="McCarthy Mark I" id="1000" weight="44" />
+      <edge source="Morris Andrew P" target="Meitinger Thomas" id="1001" weight="24" />
+      <edge source="Morris Andrew P" target="Esko Tõnu" id="1002" weight="26" />
+      <edge source="Morris Andrew P" target="Martin Nicholas G" id="1003" weight="19" />
+      <edge source="Morris Andrew P" target="Metspalu Andres" id="1004" weight="31" />
+      <edge source="Morris Andrew P" target="Peters Annette" id="1005" weight="41" />
+      <edge source="Morris Andrew P" target="Smith Albert V" id="1006" weight="22" />
+      <edge source="Morris Andrew P" target="Medland Sarah E" id="1007" weight="6" />
+      <edge source="Morris Andrew P" target="Nöthen Markus M" id="1008" weight="5" />
+      <edge source="Morris Andrew P" target="Kamatani Yoichiro" id="1009" weight="18" />
+      <edge source="Morris Andrew P" target="Taylor Kent D" id="1010" weight="33" />
+      <edge source="Morris Andrew P" target="Hakonarson Hakon" id="1011" weight="7" />
+      <edge source="Morris Andrew P" target="Franke Andre" id="1012" weight="9" />
+      <edge source="Morris Andrew P" target="Shu Xiao-Ou" id="1013" weight="9" />
+      <edge source="Morris Andrew P" target="Wang Zhe" id="1014" weight="1" />
+      <edge source="Taylor Kent D" target="Hakonarson Hakon" id="1015" weight="6" />
+      <edge source="Taylor Kent D" target="Smith Albert V" id="1016" weight="36" />
+      <edge source="Taylor Kent D" target="Boerwinkle Eric" id="1017" weight="54" />
+      <edge source="Taylor Kent D" target="Hayward Caroline" id="1018" weight="36" />
+      <edge source="Taylor Kent D" target="Peters Annette" id="1019" weight="28" />
+      <edge source="Taylor Kent D" target="Shu Xiao-Ou" id="1020" weight="10" />
+      <edge source="Taylor Kent D" target="Medland Sarah E" id="1021" weight="5" />
+      <edge source="Taylor Kent D" target="Mägi Reedik" id="1022" weight="22" />
+      <edge source="Taylor Kent D" target="Kamatani Yoichiro" id="1023" weight="16" />
+      <edge source="Taylor Kent D" target="Meitinger Thomas" id="1024" weight="19" />
+      <edge source="Taylor Kent D" target="Martin Nicholas G" id="1025" weight="13" />
+      <edge source="Taylor Kent D" target="Gieger Christian" id="1026" weight="22" />
+      <edge source="Taylor Kent D" target="Metspalu Andres" id="1027" weight="24" />
+      <edge source="Taylor Kent D" target="Campbell Harry" id="1028" weight="14" />
+      <edge source="Taylor Kent D" target="Wilson James F" id="1029" weight="19" />
+      <edge source="Taylor Kent D" target="Esko Tõnu" id="1030" weight="18" />
+      <edge source="Taylor Kent D" target="McCarthy Mark I" id="1031" weight="16" />
+      <edge source="Taylor Kent D" target="Franke Andre" id="1032" weight="9" />
+      <edge source="Taylor Kent D" target="Wang Zhe" id="1033" weight="4" />
+      <edge source="Taylor Kent D" target="Nöthen Markus M" id="1034" weight="1" />
+      <edge source="Hayward Caroline" target="Mägi Reedik" id="1035" weight="45" />
+      <edge source="Hayward Caroline" target="Gieger Christian" id="1036" weight="60" />
+      <edge source="Hayward Caroline" target="Boerwinkle Eric" id="1037" weight="64" />
+      <edge source="Hayward Caroline" target="Campbell Harry" id="1038" weight="60" />
+      <edge source="Hayward Caroline" target="Wilson James F" id="1039" weight="77" />
+      <edge source="Hayward Caroline" target="McCarthy Mark I" id="1040" weight="32" />
+      <edge source="Hayward Caroline" target="Smith Albert V" id="1041" weight="43" />
+      <edge source="Hayward Caroline" target="Franke Andre" id="1042" weight="13" />
+      <edge source="Hayward Caroline" target="Meitinger Thomas" id="1043" weight="31" />
+      <edge source="Hayward Caroline" target="Martin Nicholas G" id="1044" weight="48" />
+      <edge source="Hayward Caroline" target="Esko Tõnu" id="1045" weight="42" />
+      <edge source="Hayward Caroline" target="Metspalu Andres" id="1046" weight="52" />
+      <edge source="Hayward Caroline" target="Peters Annette" id="1047" weight="47" />
+      <edge source="Hayward Caroline" target="Medland Sarah E" id="1048" weight="20" />
+      <edge source="Hayward Caroline" target="Nöthen Markus M" id="1049" weight="10" />
+      <edge source="Hayward Caroline" target="Kamatani Yoichiro" id="1050" weight="18" />
+      <edge source="Hayward Caroline" target="Hakonarson Hakon" id="1051" weight="10" />
+      <edge source="Hayward Caroline" target="Shu Xiao-Ou" id="1052" weight="12" />
+      <edge source="Hayward Caroline" target="Wang Zhe" id="1053" weight="4" />
+      <edge source="Peters Annette" target="Boerwinkle Eric" id="1054" weight="41" />
+      <edge source="Peters Annette" target="Mägi Reedik" id="1055" weight="31" />
+      <edge source="Peters Annette" target="Esko Tõnu" id="1056" weight="27" />
+      <edge source="Peters Annette" target="Campbell Harry" id="1057" weight="24" />
+      <edge source="Peters Annette" target="Gieger Christian" id="1058" weight="80" />
+      <edge source="Peters Annette" target="Martin Nicholas G" id="1059" weight="22" />
+      <edge source="Peters Annette" target="Meitinger Thomas" id="1060" weight="43" />
+      <edge source="Peters Annette" target="Metspalu Andres" id="1061" weight="41" />
+      <edge source="Peters Annette" target="Wilson James F" id="1062" weight="33" />
+      <edge source="Peters Annette" target="McCarthy Mark I" id="1063" weight="29" />
+      <edge source="Peters Annette" target="Medland Sarah E" id="1064" weight="9" />
+      <edge source="Peters Annette" target="Smith Albert V" id="1065" weight="28" />
+      <edge source="Peters Annette" target="Nöthen Markus M" id="1066" weight="8" />
+      <edge source="Peters Annette" target="Franke Andre" id="1067" weight="17" />
+      <edge source="Peters Annette" target="Shu Xiao-Ou" id="1068" weight="13" />
+      <edge source="Peters Annette" target="Hakonarson Hakon" id="1069" weight="8" />
+      <edge source="Peters Annette" target="Kamatani Yoichiro" id="1070" weight="14" />
+      <edge source="Peters Annette" target="Wang Zhe" id="1071" weight="4" />
+      <edge source="Franke Andre" target="Smith Albert V" id="1072" weight="9" />
+      <edge source="Franke Andre" target="Boerwinkle Eric" id="1073" weight="11" />
+      <edge source="Franke Andre" target="Campbell Harry" id="1074" weight="10" />
+      <edge source="Franke Andre" target="Mägi Reedik" id="1075" weight="7" />
+      <edge source="Franke Andre" target="Wilson James F" id="1076" weight="13" />
+      <edge source="Franke Andre" target="Gieger Christian" id="1077" weight="29" />
+      <edge source="Franke Andre" target="Metspalu Andres" id="1078" weight="13" />
+      <edge source="Franke Andre" target="Esko Tõnu" id="1079" weight="10" />
+      <edge source="Franke Andre" target="Hakonarson Hakon" id="1080" weight="12" />
+      <edge source="Franke Andre" target="Nöthen Markus M" id="1081" weight="14" />
+      <edge source="Franke Andre" target="Meitinger Thomas" id="1082" weight="11" />
+      <edge source="Franke Andre" target="Martin Nicholas G" id="1083" weight="11" />
+      <edge source="Franke Andre" target="Shu Xiao-Ou" id="1084" weight="5" />
+      <edge source="Franke Andre" target="McCarthy Mark I" id="1085" weight="7" />
+      <edge source="Franke Andre" target="Medland Sarah E" id="1086" weight="3" />
+      <edge source="Franke Andre" target="Kamatani Yoichiro" id="1087" weight="7" />
+      <edge source="Franke Andre" target="Wang Zhe" id="1088" weight="2" />
+      <edge source="Kamatani Yoichiro" target="Esko Tõnu" id="1089" weight="13" />
+      <edge source="Kamatani Yoichiro" target="Metspalu Andres" id="1090" weight="16" />
+      <edge source="Kamatani Yoichiro" target="Smith Albert V" id="1091" weight="11" />
+      <edge source="Kamatani Yoichiro" target="Boerwinkle Eric" id="1092" weight="17" />
+      <edge source="Kamatani Yoichiro" target="Gieger Christian" id="1093" weight="18" />
+      <edge source="Kamatani Yoichiro" target="Medland Sarah E" id="1094" weight="9" />
+      <edge source="Kamatani Yoichiro" target="Mägi Reedik" id="1095" weight="14" />
+      <edge source="Kamatani Yoichiro" target="Meitinger Thomas" id="1096" weight="12" />
+      <edge source="Kamatani Yoichiro" target="Hakonarson Hakon" id="1097" weight="9" />
+      <edge source="Kamatani Yoichiro" target="Martin Nicholas G" id="1098" weight="20" />
+      <edge source="Kamatani Yoichiro" target="Campbell Harry" id="1099" weight="9" />
+      <edge source="Kamatani Yoichiro" target="Wilson James F" id="1100" weight="12" />
+      <edge source="Kamatani Yoichiro" target="Shu Xiao-Ou" id="1101" weight="14" />
+      <edge source="Kamatani Yoichiro" target="Nöthen Markus M" id="1102" weight="5" />
+      <edge source="Kamatani Yoichiro" target="McCarthy Mark I" id="1103" weight="8" />
+      <edge source="Kamatani Yoichiro" target="Wang Zhe" id="1104" weight="2" />
+      <edge source="McCarthy Mark I" target="Boerwinkle Eric" id="1105" weight="33" />
+      <edge source="McCarthy Mark I" target="Hakonarson Hakon" id="1106" weight="17" />
+      <edge source="McCarthy Mark I" target="Gieger Christian" id="1107" weight="40" />
+      <edge source="McCarthy Mark I" target="Meitinger Thomas" id="1108" weight="21" />
+      <edge source="McCarthy Mark I" target="Mägi Reedik" id="1109" weight="33" />
+      <edge source="McCarthy Mark I" target="Campbell Harry" id="1110" weight="26" />
+      <edge source="McCarthy Mark I" target="Wilson James F" id="1111" weight="29" />
+      <edge source="McCarthy Mark I" target="Esko Tõnu" id="1112" weight="25" />
+      <edge source="McCarthy Mark I" target="Martin Nicholas G" id="1113" weight="20" />
+      <edge source="McCarthy Mark I" target="Metspalu Andres" id="1114" weight="31" />
+      <edge source="McCarthy Mark I" target="Smith Albert V" id="1115" weight="12" />
+      <edge source="McCarthy Mark I" target="Medland Sarah E" id="1116" weight="9" />
+      <edge source="McCarthy Mark I" target="Nöthen Markus M" id="1117" weight="4" />
+      <edge source="McCarthy Mark I" target="Shu Xiao-Ou" id="1118" weight="9" />
+      <edge source="McCarthy Mark I" target="Wang Zhe" id="1119" weight="3" />
+      <edge source="Hakonarson Hakon" target="Boerwinkle Eric" id="1120" weight="11" />
+      <edge source="Hakonarson Hakon" target="Gieger Christian" id="1121" weight="15" />
+      <edge source="Hakonarson Hakon" target="Smith Albert V" id="1122" weight="7" />
+      <edge source="Hakonarson Hakon" target="Mägi Reedik" id="1123" weight="7" />
+      <edge source="Hakonarson Hakon" target="Wilson James F" id="1124" weight="10" />
+      <edge source="Hakonarson Hakon" target="Nöthen Markus M" id="1125" weight="10" />
+      <edge source="Hakonarson Hakon" target="Medland Sarah E" id="1126" weight="10" />
+      <edge source="Hakonarson Hakon" target="Meitinger Thomas" id="1127" weight="5" />
+      <edge source="Hakonarson Hakon" target="Martin Nicholas G" id="1128" weight="13" />
+      <edge source="Hakonarson Hakon" target="Metspalu Andres" id="1129" weight="8" />
+      <edge source="Hakonarson Hakon" target="Campbell Harry" id="1130" weight="7" />
+      <edge source="Hakonarson Hakon" target="Esko Tõnu" id="1131" weight="8" />
+      <edge source="Hakonarson Hakon" target="Shu Xiao-Ou" id="1132" weight="5" />
+      <edge source="Hakonarson Hakon" target="Wang Zhe" id="1133" weight="3" />
+      <edge source="Nöthen Markus M" target="Smith Albert V" id="1134" weight="10" />
+      <edge source="Nöthen Markus M" target="Esko Tõnu" id="1135" weight="10" />
+      <edge source="Nöthen Markus M" target="Boerwinkle Eric" id="1136" weight="11" />
+      <edge source="Nöthen Markus M" target="Metspalu Andres" id="1137" weight="14" />
+      <edge source="Nöthen Markus M" target="Meitinger Thomas" id="1138" weight="8" />
+      <edge source="Nöthen Markus M" target="Martin Nicholas G" id="1139" weight="22" />
+      <edge source="Nöthen Markus M" target="Medland Sarah E" id="1140" weight="17" />
+      <edge source="Nöthen Markus M" target="Campbell Harry" id="1141" weight="5" />
+      <edge source="Nöthen Markus M" target="Gieger Christian" id="1142" weight="13" />
+      <edge source="Nöthen Markus M" target="Wilson James F" id="1143" weight="4" />
+      <edge source="Nöthen Markus M" target="Mägi Reedik" id="1144" weight="5" />
+      <edge source="Nöthen Markus M" target="Nöthen Markus M" id="1145" weight="3" />
+      <edge source="Nöthen Markus M" target="Wang Zhe" id="1146" weight="1" />
+      <edge source="Nöthen Markus M" target="Shu Xiao-Ou" id="1147" weight="1" />
+      <edge source="Metspalu Andres" target="Smith Albert V" id="1148" weight="26" />
+      <edge source="Metspalu Andres" target="Esko Tõnu" id="1149" weight="66" />
+      <edge source="Metspalu Andres" target="Boerwinkle Eric" id="1150" weight="42" />
+      <edge source="Metspalu Andres" target="Meitinger Thomas" id="1151" weight="32" />
+      <edge source="Metspalu Andres" target="Gieger Christian" id="1152" weight="58" />
+      <edge source="Metspalu Andres" target="Mägi Reedik" id="1153" weight="60" />
+      <edge source="Metspalu Andres" target="Martin Nicholas G" id="1154" weight="45" />
+      <edge source="Metspalu Andres" target="Campbell Harry" id="1155" weight="28" />
+      <edge source="Metspalu Andres" target="Wilson James F" id="1156" weight="31" />
+      <edge source="Metspalu Andres" target="Medland Sarah E" id="1157" weight="23" />
+      <edge source="Metspalu Andres" target="Shu Xiao-Ou" id="1158" weight="10" />
+      <edge source="Metspalu Andres" target="Wang Zhe" id="1159" weight="3" />
+      <edge source="Wilson James F" target="Mägi Reedik" id="1160" weight="27" />
+      <edge source="Wilson James F" target="Gieger Christian" id="1161" weight="50" />
+      <edge source="Wilson James F" target="Boerwinkle Eric" id="1162" weight="43" />
+      <edge source="Wilson James F" target="Campbell Harry" id="1163" weight="60" />
+      <edge source="Wilson James F" target="Smith Albert V" id="1164" weight="29" />
+      <edge source="Wilson James F" target="Meitinger Thomas" id="1165" weight="24" />
+      <edge source="Wilson James F" target="Martin Nicholas G" id="1166" weight="34" />
+      <edge source="Wilson James F" target="Esko Tõnu" id="1167" weight="24" />
+      <edge source="Wilson James F" target="Medland Sarah E" id="1168" weight="13" />
+      <edge source="Wilson James F" target="Shu Xiao-Ou" id="1169" weight="5" />
+      <edge source="Wilson James F" target="Wang Zhe" id="1170" weight="3" />
+      <edge source="Medland Sarah E" target="Martin Nicholas G" id="1171" weight="85" />
+      <edge source="Medland Sarah E" target="Smith Albert V" id="1172" weight="14" />
+      <edge source="Medland Sarah E" target="Campbell Harry" id="1173" weight="12" />
+      <edge source="Medland Sarah E" target="Boerwinkle Eric" id="1174" weight="12" />
+      <edge source="Medland Sarah E" target="Mägi Reedik" id="1175" weight="16" />
+      <edge source="Medland Sarah E" target="Esko Tõnu" id="1176" weight="18" />
+      <edge source="Medland Sarah E" target="Gieger Christian" id="1177" weight="15" />
+      <edge source="Medland Sarah E" target="Meitinger Thomas" id="1178" weight="7" />
+      <edge source="Medland Sarah E" target="Wang Zhe" id="1179" weight="2" />
+      <edge source="Medland Sarah E" target="Shu Xiao-Ou" id="1180" weight="1" />
+      <edge source="Wang Zhe" target="Boerwinkle Eric" id="1181" weight="7" />
+      <edge source="Wang Zhe" target="Smith Albert V" id="1182" weight="5" />
+      <edge source="Wang Zhe" target="Mägi Reedik" id="1183" weight="3" />
+      <edge source="Wang Zhe" target="Meitinger Thomas" id="1184" weight="1" />
+      <edge source="Wang Zhe" target="Esko Tõnu" id="1185" weight="3" />
+      <edge source="Wang Zhe" target="Gieger Christian" id="1186" weight="5" />
+      <edge source="Wang Zhe" target="Shu Xiao-Ou" id="1187" weight="3" />
+      <edge source="Wang Zhe" target="Martin Nicholas G" id="1188" weight="4" />
+      <edge source="Wang Zhe" target="Campbell Harry" id="1189" weight="1" />
+      <edge source="Mägi Reedik" target="Gieger Christian" id="1190" weight="42" />
+      <edge source="Mägi Reedik" target="Boerwinkle Eric" id="1191" weight="38" />
+      <edge source="Mägi Reedik" target="Campbell Harry" id="1192" weight="25" />
+      <edge source="Mägi Reedik" target="Esko Tõnu" id="1193" weight="47" />
+      <edge source="Mägi Reedik" target="Martin Nicholas G" id="1194" weight="30" />
+      <edge source="Mägi Reedik" target="Smith Albert V" id="1195" weight="22" />
+      <edge source="Mägi Reedik" target="Meitinger Thomas" id="1196" weight="23" />
+      <edge source="Mägi Reedik" target="Shu Xiao-Ou" id="1197" weight="9" />
+      <edge source="Shu Xiao-Ou" target="Martin Nicholas G" id="1198" weight="6" />
+      <edge source="Shu Xiao-Ou" target="Esko Tõnu" id="1199" weight="7" />
+      <edge source="Shu Xiao-Ou" target="Meitinger Thomas" id="1200" weight="8" />
+      <edge source="Shu Xiao-Ou" target="Gieger Christian" id="1201" weight="12" />
+      <edge source="Shu Xiao-Ou" target="Boerwinkle Eric" id="1202" weight="7" />
+      <edge source="Shu Xiao-Ou" target="Smith Albert V" id="1203" weight="5" />
+      <edge source="Shu Xiao-Ou" target="Campbell Harry" id="1204" weight="4" />
+      <edge source="Smith Albert V" target="Boerwinkle Eric" id="1205" weight="66" />
+      <edge source="Smith Albert V" target="Meitinger Thomas" id="1206" weight="26" />
+      <edge source="Smith Albert V" target="Esko Tõnu" id="1207" weight="21" />
+      <edge source="Smith Albert V" target="Campbell Harry" id="1208" weight="23" />
+      <edge source="Smith Albert V" target="Martin Nicholas G" id="1209" weight="22" />
+      <edge source="Smith Albert V" target="Gieger Christian" id="1210" weight="28" />
+      <edge source="Gieger Christian" target="Meitinger Thomas" id="1211" weight="54" />
+      <edge source="Gieger Christian" target="Boerwinkle Eric" id="1212" weight="51" />
+      <edge source="Gieger Christian" target="Campbell Harry" id="1213" weight="42" />
+      <edge source="Gieger Christian" target="Esko Tõnu" id="1214" weight="38" />
+      <edge source="Gieger Christian" target="Martin Nicholas G" id="1215" weight="40" />
+      <edge source="Esko Tõnu" target="Boerwinkle Eric" id="1216" weight="33" />
+      <edge source="Esko Tõnu" target="Meitinger Thomas" id="1217" weight="18" />
+      <edge source="Esko Tõnu" target="Martin Nicholas G" id="1218" weight="28" />
+      <edge source="Esko Tõnu" target="Campbell Harry" id="1219" weight="18" />
+      <edge source="Campbell Harry" target="Boerwinkle Eric" id="1220" weight="38" />
+      <edge source="Campbell Harry" target="Meitinger Thomas" id="1221" weight="20" />
+      <edge source="Campbell Harry" target="Martin Nicholas G" id="1222" weight="30" />
+      <edge source="Boerwinkle Eric" target="Meitinger Thomas" id="1223" weight="36" />
+      <edge source="Boerwinkle Eric" target="Martin Nicholas G" id="1224" weight="26" />
+      <edge source="Meitinger Thomas" target="Martin Nicholas G" id="1225" weight="20" />
+    </edges>
+  </graph>
+</gexf>
