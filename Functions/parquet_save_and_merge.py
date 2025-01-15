@@ -86,3 +86,22 @@ def save_and_merge_in_batches(
 
     print("Temporary batch files removed. All done!")
     return final_file_path
+
+# ---------------------------
+# EXAMPLE USAGE
+# ---------------------------
+if __name__ == "__main__":
+
+    folder_path = "Data/2.Processed/ModellingData"
+    final_file = "P4_final_merged.parquet"
+    batch_size = 100_000  # e.g. if you want ~10 batches
+
+    result_path = save_and_merge_in_batches(
+        df=df_final,
+        batch_size=batch_size,
+        output_folder=folder_path,
+        final_filename=final_file,
+        temp_batch_prefix="temp_batch_"
+    )
+
+    print(f"All done. Merged file at: {result_path}")

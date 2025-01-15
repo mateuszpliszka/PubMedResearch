@@ -42,3 +42,14 @@ def read_parquet_in_batches_with_progress(file_path, batch_size):
     combined_df = pd.concat(all_chunks, ignore_index=True)
     
     return combined_df
+
+# EXAMPLE USAGE
+if __name__ == "__main__":
+    file_path = "Data/2.Processed/ModellingData/P1_all.parquet"
+    batch_size = 100_000  # Define your desired chunk size
+    
+    df = read_parquet_in_batches_with_progress(file_path, batch_size)
+    
+    print(f"\nFinal DataFrame with {len(df)} rows:")
+    df.head()
+
