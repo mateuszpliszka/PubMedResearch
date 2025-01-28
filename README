@@ -1,0 +1,30 @@
+📂 PubMedResearch
+├── 📂 Backup                          # For backups of Jupyter notebooks or other files
+│   ├── BACKUP_DATE                   # Organize backups by date
+│   ├── ...
+├── 📂 Data                           # All data-related folders and files
+│   ├── 📂 Raw                        # Raw data as obtained from source
+│   ├── 📂 EarlyCleaned               # Early-stage cleaned data
+│   ├── 📂 Processed                  # Final processed data ready for analysis
+│   ├── 📂 ModellingData              # Data for specific modeling tasks
+│   ├── 📂 Outputs                    # Outputs like visualizations or predictions
+├── 📂 Functions                      # Python scripts containing reusable functions
+│   ├── parquet_reader.py             # Functions for reading Parquet files
+│   ├── parquet_save_and_merge.py     # Functions for saving and merging Parquet files
+│   ├── data_processing.py            # Functions for cleaning, merging, or extracting data
+├── 📂 Notebooks                      # Jupyter notebooks for analysis
+│   ├── 0.API_Data_Gathering.ipynb
+│   ├── 1.Parquet_Early_Data_Cleaning.ipynb
+│   ├── 2.EDA_Tokenization.ipynb
+│   ├── 3.Keyword_Analysis.ipynb
+│   ├── 4.Sentiment_Analysis.ipynb
+│   ├── 5.Topic_Modelling.ipynb
+│   ├── ...
+├── 📂 Docs                           # Documentation files
+│   ├── README.md                     # Main project overview
+│   ├── Data-README.md                # Detailed documentation for the data
+├── 📂 Helpers                        # Additional helpers like lists, images, and queries
+│   ├── queries.txt
+│   ├── sample_images.webp
+├── LICENSE                           # License for the project
+├── .gitignore                        # Git ignore rules
