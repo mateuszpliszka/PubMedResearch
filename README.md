@@ -131,7 +131,7 @@ By keeping all rows we additionaly:
 
 ---
 
-## **4. 4.Topic Modelling**
+## **4. Topic Modelling**
 ### **File**
 [4.Analysis_TopicModelling.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/4.Analysis_TopicModelling.ipynb) 
 
@@ -145,7 +145,7 @@ By keeping all rows we additionaly:
 
 - Identifying spikes in specific terms, such as the surge in COVID-related research.
 
-**Process**
+### **Process**
 
 ***Data Cleaning & Tokenization:*** We started by lemmatizing tokens in merged_tokens_lemmatized, removing punctuation, and standardizing morphological variants (e.g., “tumors” → “tumor”).
 
@@ -162,7 +162,7 @@ By keeping all rows we additionaly:
 
 ***Extracting Topics:*** Each topic is described by its top words. We interpreted topic by looking at these high-weight words. The Labeling could also be done later on, but for now we decided to leave it be as there might be some work neede with perplexity (although in both original dataset and top 1000 tokens dataset we had pretty low perplexity in comparison to what was there in the beggning original; 300 vs previously over 1 million and perplexity of 1000 tokens dataset ; 64 perplexity (lowest one until now))
 
-***Interpreting Results:***
+### ***Interpreting Results:***
 
 - We computed topic coherence (using Gensim’s CoherenceModel) to measure how semantically consistent the top words are. 0.34 - 0.37 ; Although it may seem like a low score, We think that for dataset related to very specific fields, that have words with many meanings, and many of which are in latin; it's quite a high score
 
@@ -176,7 +176,7 @@ By keeping all rows we additionaly:
 
 - The field of medical research is evolving, with some topics getting more attention over time. 
 
-- teady growth in the number of documents mentioning key diseases.
+- There is presence of steady growth in the number of documents mentioning key diseases.
 
 ---
 
