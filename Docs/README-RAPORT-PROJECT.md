@@ -193,43 +193,19 @@ In this section, we will closely examine the number of COVID-19-related articles
 
 ---
 
-## **9. Topic Modeling and Disease Frequency Analysis**
+## **7. Network between the authors and co-authors of the articles**
+### **File**
+[7.Network.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/7.Network.ipynb) 
 ### **Purpose**
-This notebook focuses on **identifying frequently mentioned diseases** in the abstracts.
+In this notebook, we will investigate the network between the authors and co-authors of the articles.
 
-### **Methods Used**
-- **Named Entity Recognition (NER)** is performed using multiple approaches:
-  - **spaCy**
-  - **Hugging Face models**
-  - **Dictionary-based methods**
-- Each approach extracts **disease-related terms** from:
-  - **Abstracts**
-  - **Titles**
-  - **MeSH terms (Medical Subject Headings)**
+### **Conclusions**
+1. The top publisher in our dataset is David A. Bennett [1], who has a little more than 700 filtered articles with diseases. In his Google Scholar profile, he has 1195 articles in total.
+2. Among the top 30 publishers, the strongest connection is between Blennow Kaj and Zetterberg Henrik, who have co-authored around 160 articles together.
+3. In some articles, the same name and surname appear more than once. However, this is not a mistake. Sometimes people with the same names co-author the same article. For example, two people named Li Li co-authored 8 articles.
 
-### **Data Preprocessing**
-- The extracted tokens are **merged** to create unified columns:
-  - **`merged_abstract_tokens`** → Diseases found in abstracts.
-  - **`merged_title_tokens`** → Diseases found in titles.
-  - **`merged_mesh_tokens`** → Diseases found in MeSH terms.
-  - **`merged_all_tokens`** → Combined list from all sources.
-
-### **Disease Frequency Analysis**
-- The script uses Python’s `Counter` to count **how often each disease is mentioned**.
-- The **top 40 diseases** by frequency are displayed.
-
-### **Potential Insights**
-1. **Which diseases are most commonly studied?**
-   - Are some diseases **overrepresented or underrepresented** in medical literature?
-2. **Shifts in disease focus over time**:
-   - By analyzing data over different years, trends in disease research can be identified.
-3. **Comparing disease frequency with sentiment analysis**:
-   - Are some diseases associated with **more positive or negative abstracts**?
-
-### **Possible Next Steps**
-- **Visualization of disease frequency** (bar charts, word clouds).
-- **Time-series analysis**: How has interest in certain diseases changed?
-- **Comparisons with real-world prevalence** (e.g., are research trends aligned with actual disease burden?).
+[1] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
+[2] https://www.nature.com/articles/nbt.1665
 
 ---
 
