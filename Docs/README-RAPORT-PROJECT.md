@@ -42,7 +42,7 @@ The following types of data are downloaded for each PubMed article:
 ---
 
 ## **1. Parquet Early Data Cleaning**
-### **Purpose**
+### **File**
 [1.Parquet_Early_Data_Cleaning.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/1.Parquet_Early_Data_Cleaning.ipynb)  
 ### **Purpose**
 This Jupyter Notebook is designed to process and clean a collection of JSON files containing article data.
@@ -56,32 +56,30 @@ This Jupyter Notebook is designed to process and clean a collection of JSON file
 
 ---
 
-## **3. Exploratory Data Analysis (EDA)**
+## **2. Exploratory Data Analysis (EDA)**
+### **File**
+[2.EDA.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/2.EDA.ipynb)  
+
 ### **Purpose**
-Provides an **initial statistical and visual exploration** of the dataset.
+In this file, we perform Exploratory Data Analysis. We answered to the following questions:
 
-### **Main Analyses Performed**
-1. **Basic Descriptive Statistics**:
-   - Number of articles.
-   - Distribution of abstracts across journals.
-   - Missing values and data consistency.
-2. **Temporal Trends**:
-   - Articles per **year** to see **publication growth**.
-3. **Journal Distribution**:
-   - Identifies the most **frequent journals**.
-4. **Keyword and MeSH Term Distributions**:
-   - Counts **most common** terms.
-   - Analyzes **disease topics**.
-5. **Abstract Length Distribution**:
-   - Evaluates the **length of abstracts** to determine variability.
+- Who is the most active publisher?
+- What is the most popular journal?
+- Is the number of co-authors growing?
+- Are there other trends in the articles?
 
-### **Insights**
-- Identifies potential **biases in publication trends**.
-- Highlights **which topics are most studied**.
+### **Conclusions**
+1. An increasing trend is observed across various domains, including the number of articles published per year, but also the number of authors per article, the number of words in abstracts, and the number of words per title.
+2. The highest average number of articles are published in January, which aligns with the findings from the article "April publishing lull follows end-of-year academic flurry" [1]. This study stated that January and November are the most popular months for publishing.
+3. The number of authors per article is on the rise, increasing from an average of approximately 5 authors per article in 1995 to around 11 authors per article in 2024. The overall average number of authors per article from 1995 to 2024 is 6.54.
+4. The average number of words in abstracts has increased from slightly below 190 in 1995 to over 230 by 2024. The overall average number of words in abstracts for the entire period is 210.
+5. The average number of words in titles has been increasing over the years, rising from 11.5 in 1995 to just over 14 in 2024. This represents an approximate 20% increase over 29 years, mirroring the same percentage increase observed in the length of abstracts.
+6. The top publisher in our dataset is David A. Bennett [2], who has authored over 700 filtered articles related to diseases. In his Google Scholar profile, he has 1195 articles.
+7. The most popular journal in our dataset is "Scientific Reports" with 8,778 publications, followed by "Clinical Infectious Diseases" with 5,953 publications, and "Nature Communications" with 5,537 publications. The least popular journal among the top 10 is "Proceedings of the National Academy of Sciences of the United States of America" with 3,537 publications.
 
-### **Next Steps**
-- Deeper **sentiment** and **topic modeling** analysis.
-- **Co-authorship network analysis**.
+[1] https://www.nature.com/nature-index/news/april-publishing-lull-follows-end-of-year-academic-flurry
+[2] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
+
 
 ---
 
