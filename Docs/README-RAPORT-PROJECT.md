@@ -1,9 +1,44 @@
 # DEEP DIVE INTO NOTEBOOKS
 
-## **1. API Data Gathering**
+# The Most Popular Diseases in Medical Articles on PubMed
 
+Authors:
+- Łukasz Janisiów
+- Maciej Kuchciak
+- Mateusz Pliszka
+
+## Project Overview:
+The main goal of this analysis is to identify the most popular diseases in medical articles on PubMed from January 1994 to December 2024. The analysis includes more than 1 million articles, focusing primarily on titles, abstracts, and MeSH terms. 
+Additionally, the analysis investigates:
+- Sentiment of abstracts
+- Network between authors and their co-authors
+- Connection between COVID-19 infection rates and the number of COVID-19 related articles
+- Exploratory Data Analysis to find others interesting insights from data
+
+Our analysis aims to answer the following questions:
+- What is the most popular illness describe in medical articles from 1994 to 2024? How does it vary each year?
+- Is there a correlation between COVID-19 cases and the number of related articles?
+- Is there a noticeable sentiment in abstracts? Does it change over time?
+- Are there any other features that change over time in scientific articles?
+---
+## **1. API Data Gathering**
+- **File:** [0.API_Data_Gathering.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/0.API_Data_Gathering.ipynb)  
 ### **Purpose**
-This notebook is dedicated to **retrieving scientific article data from external sources** (PubMed) via an API.
+This Jupyter Notebook is designed to fetch and process PubMed articles using the PubMed API. It provides a complete pipeline for querying PubMed, fetching article details, and saving the data for further analysis.
+The following types of data are downloaded for each PubMed article:
+   - uid: The unique PubMed ID (PMID) of the article.
+   - title: The title of the article. 
+   - journal: The name of the journal in which the article was published. 
+   - pubdate: The publication date of the article in the format "YYYY-MM-DD".
+   - abstract_sections: A list of sections within the article's abstract, including labels, categories, and text.
+   - authors: A list of authors, including their names, initials, ORCID IDs, and affiliations.
+   - mesh_terms: Medical Subject Headings (MeSH) terms associated with the article, including descriptors, major topics, and qualifiers.
+   - keywords: Keywords associated with the article.
+
+The total number of articles downloaded is 1,460,893.
+
+
+
 
 ### **Steps Involved**
 1. **Establishing API Connection**:
