@@ -22,7 +22,6 @@ This notebook is dedicated to **retrieving scientific article data from external
    - Uses **batch processing** to handle API rate limits and ensure efficiency.
 
 ### **Potential Next Steps**
-- **Quality control checks** to verify data consistency.
 - **Merging different API sources** for richer datasets.
 - **Adding DOI-based retrieval** for full-text analysis.
 
@@ -167,7 +166,7 @@ This notebook examines **MeSH (Medical Subject Headings)** terms in PubMed abstr
 
 ---
 
-## **1. Sentiment Analysis of Medical Abstracts (Version 1)**
+## **7. Sentiment Analysis of Medical Abstracts (Version 1)**
 ### **Purpose**
 This notebook sets the foundation for **analyzing sentiment in scientific abstracts**, particularly from medical research articles. The core assumption is that most abstracts should be **neutral**, given the objective nature of scientific writing. However, this needs empirical verification.
 
@@ -197,7 +196,7 @@ This notebook sets the foundation for **analyzing sentiment in scientific abstra
 
 ---
 
-## **2. Sentiment Analysis of Medical Abstracts (Version 2)**
+## **8. Sentiment Analysis of Medical Abstracts (Version 2)**
 ### **Purpose**
 This version builds on **Version 1**, applying **sentiment analysis** to the cleaned abstracts using **VADER (Valence Aware Dictionary and sEntiment Reasoner)**.
 
@@ -232,7 +231,7 @@ This version builds on **Version 1**, applying **sentiment analysis** to the cle
 
 ---
 
-## **3. Topic Modeling and Disease Frequency Analysis**
+## **9. Topic Modeling and Disease Frequency Analysis**
 ### **Purpose**
 This notebook focuses on **identifying frequently mentioned diseases** in the abstracts.
 
@@ -272,7 +271,7 @@ This notebook focuses on **identifying frequently mentioned diseases** in the ab
 
 ---
 
-## **4. COVID-19 Analysis**
+## **10. COVID-19 Analysis**
 ### **Purpose**
 This notebook explores the relationship between **COVID-19 research publications** and **real-world COVID-19 case trends**.
 
@@ -300,7 +299,7 @@ This notebook explores the relationship between **COVID-19 research publications
 
 ---
 
-## **5. Network Analysis of Co-Authorship**
+## **11. Network Analysis of Co-Authorship**
 ### **Purpose**
 This notebook explores **collaboration networks** among medical researchers.
 
