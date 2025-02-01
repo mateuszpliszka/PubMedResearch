@@ -4,7 +4,7 @@ This repository provides a comprehensive pipeline to gather, preprocess, analyze
 It includes scripts for API data collection, cleaning, tokenization, sentiment analysis, and topic modeling, enabling large-scale text mining on disease-related publications.
 
 ## Table of Contents
-```
+
 1. [Overview](#overview)  
 2. [Project Structure](#project-structure)  
 3. [Data Folders](#data-folders)  
@@ -14,7 +14,7 @@ It includes scripts for API data collection, cleaning, tokenization, sentiment a
 7. [Dataset Description](#dataset-description)  
 8. [Potential Applications](#potential-applications)  
 9. [License](#license)
-```
+
 ---
 
 ## Overview
@@ -51,7 +51,7 @@ PubMedResearch/
 │   │   └── SentimentAnalysis/  # Data or results specifically for sentiment tasks
 │   │       ├── Labeled_Chunks/ # Sentiment-labeled chunks
 │   │       └── Chunks/         # Possibly chunked abstracts for pipeline
-│   ├── 3.Outputs/              # Final or intermediate outputs (visualizations, CSVs)
+│   ├── 3.Outputs/              # Final or intermediate outputs (visualizations, CSVs) for future development
 │   └── 4.AdditionalData/       # Misc/domain-specific data (COVID-19, etc.)
 │       └── Covid-19/
 ├── Docs/                       # Documentation files (e.g., extra .md files, user guides)
@@ -62,10 +62,19 @@ PubMedResearch/
 ├── Helpers/                    # Various helper files or images
 │   └── kaggle_picture/
 ├── Notebooks/                  # Main Jupyter notebooks (active dev or final)
+│   ├── 0.API_Data_Gathering.ipynb          # Notebook for querying PubMed APIs and gathering raw data
+│   ├── 1.Parquet_Early_Data_Cleaning.ipynb # Minimal cleaning & converting raw JSON to Parquet
+│   ├── 2.EDA_Tokenization.ipynb            # Exploratory data analysis and tokenization strategies
+│   ├── 3.1.Keywords_analysis.ipynb         # Analysis of keyword frequencies or patterns
+│   ├── 3.2.Mesh_analysis.ipynb             # Analysis of MeSH terms across abstracts
+│   ├── 3.EDA.ipynb                         # Additional EDA (may combine or refine the above steps)
+│   ├── 4.Sentiment_abstract.ipynb          # Initial sentiment analysis on abstracts
+│   ├── 4.Sentiment_abstract_vol2.ipynb     # Extended or second phase of sentiment analysis
+│   ├── 5.Analysis_TopicModelling.ipynb     # LDA or other topic modeling steps on merged tokens
+│   ├── 6.Covid.ipynb                       # Focused notebook on COVID-related data or analysis
+│   ├── 7.Network.ipynb                     # Co-author or disease network analysis (graphs/networkX)                          
 │   └── archive/                # Old or archived notebooks
 ├── ScispaCy/                   # Possibly environment or code related to SciSpaCy usage
-├── TRASH/                      # Temporary or discarded items
-│   └── BACKUP2.01.2025/        # Additional backup
 └── README.md (and/or other top-level files like .gitignore, LICENSE, etc.)
 ```
 
@@ -98,9 +107,9 @@ PubMedResearch/
 
 Use them as:
 
-from Functions.parquet_reader import read_parquet_in_batches_with_progress 
+***from Functions.parquet_reader import read_parquet_in_batches_with_progress***
 
-from Functions.parquet_save_and_merge import save_and_merge_in_batches
+***from Functions.parquet_save_and_merge import save_and_merge_in_batches***
 
 ---
 
@@ -122,7 +131,7 @@ Notebooks/
 └── archive/                            # Old or archived notebooks
 ///
 
-These notebooks guide you from **data gathering & minimal cleaning** to **tokenization, sentiment, and topic modeling**.
+These notebooks guide you from **data gathering & minimal cleaning** through **tokenization, sentiment, and topic modeling** to **network analysis**. 
 
 ---
 
@@ -161,7 +170,7 @@ These notebooks guide you from **data gathering & minimal cleaning** to **tokeni
 ## Dataset Description
 
 This dataset (covering ~1 million abstracts from ~1995–2024) facilitates large-scale text mining and longitudinal research on biomedical publications:
-- **Focus**: English, US affiliation, disease/health terms, humans.
+- **Focus**: English, US affiliation, disease related terms (health problems are included too), humans.
 - **File Highlights**:
 - `P5_final_new.parquet`: Comprehensive fields & multiple token columns (`_simple`, `_hf`, `_spacy`).
 - `PubMedAbstracts_final.parquet`: Possibly smaller or final deduplicated dataset.
@@ -189,4 +198,70 @@ This dataset (covering ~1 million abstracts from ~1995–2024) facilitates large
 This project is licensed under the MIT License.  
 See the [`LICENSE`](LICENSE) file for details.
 
-**Happy researching!** Feel free to open issues or submit pull requests for improvements.
+
+## TO CHECK
+
+Core Fields:
+uid (PubMed ID), title, journal, abstract, authors, affiliations, mesh_terms, keywords, coi_statement, parsed_date.
+Token Fields:
+cleaned_title_tokens_simple, cleaned_abstract_tokens_simple: Minimal tokenization (lowercase, bracket removal, punctuation trimming). Retains key domain terms like “mortality,” “hiv.”
+disease_abstract_spacy, disease_title_spacy: Disease-centric tokens extracted via spaCy pipeline or additional heuristics. Could highlight “HIV,” “AIDS,” “cancer,” etc.
+Some “_hf” fields may reflect tokenization with Hugging Face tokenizers.
+Use Cases: Directly feed to your ML pipelines (e.g., classification, entity extraction).
+PubMedAbstracts_final.parquet (~1.32 GB)
+
+A somewhat smaller or differently processed subset with fewer columns (like uid, title, abstract, parsed_date).
+Chunks_Abstracts/ folder
+
+Contains chunked Parquet files (~100K rows each) if you want to process in partial loads instead of one big file.
+All files are in Parquet format for more efficient reading and partial loading.
+
+3) Token Fields Explained
+During data preparation, we generated multiple token fields to accommodate different NLP approaches:
+
+Minimal (“_simple”) Tokenization
+
+Lowercased and stripped bracketed citations or extraneous punctuation (e.g., [1]).
+Kept essential domain terms (like “immunotherapy,” “diabetes”) for analyzing disease contexts.
+Splitting on spaces or basic punctuation, ensuring an accessible, “lightly cleaned” token list.
+Hugging Face (“_hf”) Tokens
+
+If present, these were produced using Hugging Face Transformers’ tokenizer.encode_plus or similar.
+May have subword tokens (e.g., “immuno,” “##therapy”) typical of BERT-like models.
+Suitable for direct input to a BERT-based pipeline (like BiomedBERT or distilbert-base-uncased).
+SpaCy Disease-Related Tokens (“disease_title_spacy, disease_abstract_spacy`)
+
+Used a spaCy model or custom rules to focus on disease terms, possibly leveraging en_ner_bc5cdr_md or specialized disease-entity recognition.
+Helpful for quickly identifying disease mentions (e.g., “HIV,” “COVID-19,” “malaria,” “cancer”).
+By providing these different token sets, you can pick whichever approach fits your workflow: minimal raw tokens for a broad approach, or specialized/disease tokens for narrower tasks.
+
+4) Minimal Cleaning & Date Corrections
+Lowercased textual fields.
+Removed bracketed citations [1].
+Removed extraneous punctuation or special characters, while preserving domain terms.
+Corrected or approximated publication dates (parsed_date) if needed (some had None-01-01 placeholders).
+5) Source & Disclaimer
+Origin: PubMed (National Library of Medicine) via a refined query (disease/health terms, English language, US affiliation, humans).
+License & Usage:
+Journal abstracts typically remain under original author/publisher copyright.
+Per NCBI disclaimers, NLM does not claim copyright on abstracts but usage beyond fair use may need copyright holder permission.
+Provided: For research / text-mining only, respecting NCBI E-utilities usage guidelines.
+6) Potential Applications
+Longitudinal Disease Study:
+
+Compare abstract frequencies over time, e.g., do you see a spike in “influenza” publications around outbreak years?
+Evaluate correlations between publication intensity and real-world disease surges.
+NLP:
+
+Named Entity Recognition (e.g., extracting disease names, chemicals, symptoms).
+Sentiment Analysis (noting that scientific abstracts are typically neutral).
+Summarization or language model fine-tuning (BiomedBERT, PubMedBERT).
+Bibliometric / Trend Analysis:
+
+Evaluate how research on certain conditions has grown or shrunk over the decades, specifically for US-affiliated institutions.
+Explore mesh_terms or keywords to find emergent disease topics.
+Machine Learning Fine-Tuning:
+
+The token fields let you quickly adapt domain LMs to classification or other tasks.
+If your memory is limited, consider reading data from the Chunks_Abstracts/ folder in smaller batches.
+
