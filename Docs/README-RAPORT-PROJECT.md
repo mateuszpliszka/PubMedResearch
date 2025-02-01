@@ -37,35 +37,22 @@ The following types of data are downloaded for each PubMed article:
    - keywords: Keywords associated with the article.
 
 ### **Conclusions**
-The total number of articles downloaded is 1,460,893.
+1. The total number of articles downloaded is 1,460,893.
 
 ---
 
 ## **2. Parquet Early Data Cleaning**
 ### **Purpose**
-This notebook performs **initial cleaning and structuring** of the raw data retrieved from the API.
+[1.Parquet_Early_Data_Cleaning.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/1.Parquet_Early_Data_Cleaning.ipynb)  
+### **Purpose**
+This Jupyter Notebook is designed to process and clean a collection of JSON files containing article data.
+- Load raw JSON data containing PubMed abstracts, flatten the nested structures, and convert the data into Parquet format for efficient storage and processing.
+- Address inconsistencies in publication date formats and eliminate duplicate articles.
 
-### **Key Steps**
-1. **Loading Raw Parquet Files**:
-   - Reads data from API retrieval in Parquet format.
-2. **Identifying and Handling Missing Values**:
-   - Removes **articles with missing abstracts**.
-   - Ensures that missing abstracts are due to **incomplete data, not errors**.
-3. **Filtering Data by Time Period**:
-   - Likely removes **outlier years** (e.g., before 1900 or after 2025).
-4. **Selecting Key Features**:
-   - Keeps essential columns such as:
-     - **Title**
-     - **Abstract**
-     - **Journal**
-     - **Authors**
-     - **MeSH terms**
-     - **Keywords**
-     - **Publication date**.
+### **Conclusions**
+1. The downloaded data contained 401,132 duplicate rows, accounting for 27.5% of the dataset.
+2. The final dataset used for analysis contains 1,059,761 unique rows after deduplication.
 
-### **Impact**
-- Ensures **clean and structured** data before **further analysis**.
-- Prepares dataset for **tokenization, keyword analysis, and sentiment evaluation**.
 
 ---
 
