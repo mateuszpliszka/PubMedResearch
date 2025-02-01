@@ -20,7 +20,7 @@ Our analysis aims to answer the following questions:
 - Is there a noticeable sentiment in abstracts? Does it change over time?
 - Are there any other features that change over time in scientific articles?
 ---
-## **1. API Data Gathering**
+## **0. API Data Gathering**
 ### **File** 
 [0.API_Data_Gathering.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/0.API_Data_Gathering.ipynb)  
 ### **Purpose**
@@ -41,7 +41,7 @@ The following types of data are downloaded for each PubMed article:
 
 ---
 
-## **2. Parquet Early Data Cleaning**
+## **1. Parquet Early Data Cleaning**
 ### **Purpose**
 [1.Parquet_Early_Data_Cleaning.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/1.Parquet_Early_Data_Cleaning.ipynb)  
 ### **Purpose**
