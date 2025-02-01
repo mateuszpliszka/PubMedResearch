@@ -140,6 +140,7 @@ Lorem ipsum
 
 ### **Conclusions**
 Lorem ipsum
+
 ---
 
 ## **5.1 Keywords Analysis**
@@ -205,6 +206,7 @@ In this notebook, we will investigate the network between the authors and co-aut
 3. In some articles, the same name and surname appear more than once. However, this is not a mistake. Sometimes people with the same names co-author the same article. For example, two people named Li Li co-authored 8 articles.
 
 [1] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
+
 [2] https://www.nature.com/articles/nbt.1665
 
 ---
