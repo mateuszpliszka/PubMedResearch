@@ -78,34 +78,56 @@ In this file, we perform Exploratory Data Analysis. We answered to the following
 7. The most popular journal in our dataset is "Scientific Reports" with 8,778 publications, followed by "Clinical Infectious Diseases" with 5,953 publications, and "Nature Communications" with 5,537 publications. The least popular journal among the top 10 is "Proceedings of the National Academy of Sciences of the United States of America" with 3,537 publications.
 
 [1] https://www.nature.com/nature-index/news/april-publishing-lull-follows-end-of-year-academic-flurry
+
 [2] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
 
 
 ---
 
-## **4. EDA Tokenization**
+## **3. EDA Tokenization**
+### **File**
+[3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb)  
+
 ### **Purpose**
-This notebook focuses on **tokenizing abstracts and titles** to extract **meaningful words** for further NLP tasks.
+This notebook processes and analyzes PubMed abstracts and titles to detect diseases using various tokenization methods and SciSpacy's biomedical NER model.
 
-### **Tokenization Methods Used**
-1. **Simple Tokenization**:
-   - Splits text into words.
-   - Removes **stopwords, punctuation, and numbers**.
-2. **Hugging Face-based Tokenization**:
-   - Uses **pretrained models (e.g., BERT, SciBERT)** for advanced **subword tokenization**.
-3. **spaCy Tokenization**:
-   - Biomedical-focused **named entity recognition (NER)**.
-4. **MeSH Term Matching**:
-   - Ensures **standardized medical terminology**.
+Tokenization Methods:
+1. **Simple Tokenization**: Basic whitespace and punctuation-based tokenization.
+2. **Hugging Face Tokenization**: Tokenization using the Hugging Face `distilbert-base-uncased` model.
+3. **Dictionary-Based Disease Detection**: Filtering tokens based on a predefined disease dictionary.
+4. **SciSpacy Biomedical NER**: Using the `en_ner_bc5cdr_md` model to detect disease entities.
 
-### **Additional Processing**
-- **Stemming/Lemmatization**: Converts words to their base form.
-- **Entity Recognition**: Detects **disease-related terms**.
-- **Part-of-Speech (POS) Tagging**: Helps identify **nouns, verbs, adjectives**.
+### **Conclusions/Final Decision**
+The goal was to ensure high-quality data for further analysis and modelling while retaining as much relevant information as possible.
 
-### **Impact**
-- Creates a **clean tokenized dataset**.
-- Prepares data for **disease frequency analysis and topic modeling**.
+**Choices Considered**:
+
+Title only: Retain rows with illness-related tokens in the title.
+*Result*: ~1,000,000 → 480,000 rows removed (~520,000 retained).
+
+- Abstract + Title: Retain rows with tokens in either title or abstract.
+*Result*: ~1,000,000 → 84,000 rows removed (~916,000 retained).
+
+- Abstract + Title + MeSH terms: Include tokens found in MeSH terms.
+*Result*: ~1,000,000 → 60,000rows removed (~940,000 retained).
+
+- Abstract + Title + MeSH + Hybrid Filtering: Use advanced filtering (e.g., hybrid matching and simpler keyword matching).
+*Result*: ~1,000,000 → 54,000 rows removed (~946,000 retained).
+
+- Retain All Rows: Do not remove rows based on token presence.
+
+**Final Decision**:
+We chose Option 5 to retain all rows. This decision was based on the reasoning that data lacking illness-related tokens is not inherently irrelevant and there may be possibility to check these inputs (articles) and see what's the problem with them. 
+
+By keeping all rows we additionaly:
+
+- We maintain the integrity and diversity of the dataset.
+
+- Downstream analyses remain flexible, as token filtering can be performed at a later stage if necessary.
+
+- It enables broader exploration and modeling possibilities without prematurely discarding data.
+
+- By taking this approach, the dataset remains inclusive, ensuring no potential insights are lost. This aligns with our goal of providing a comprehensive resource for PubMed data analysis.
 
 ---
 

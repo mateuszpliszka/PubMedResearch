@@ -1,0 +1,1 @@
+Pierwsze się nie zdążyły uchronić :( :).
