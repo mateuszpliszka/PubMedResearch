@@ -131,7 +131,7 @@ By keeping all rows we additionaly:
 
 ---
 
-## **4. 4.Sentiment abstract**
+## **4. 4.Topic Modelling**
 ### **File**
 [3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb) 
 
@@ -177,38 +177,19 @@ This notebook explores the use of MeSH (Medical Subject Headings) [1] terms in P
 
 ---
 
-## **8. Sentiment Analysis of Medical Abstracts (Version 2)**
+## **6. COVID-19 timeseries closer look**
+### **File**
+[5.2.Covid.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/6.Covid.ipynb) 
+
 ### **Purpose**
-This version builds on **Version 1**, applying **sentiment analysis** to the cleaned abstracts using **VADER (Valence Aware Dictionary and sEntiment Reasoner)**.
+In this section, we will closely examine the number of COVID-19-related articles and compare them to the new COVID-19 cases worldwide [1].
 
-### **Methodology**
-- **Sentiment Model Used**: **VADER (from NLTK)**
-- **Why VADER?**
-  - Designed for **short texts** like tweets or abstracts.
-  - Handles **both neutral and emotional** content.
-  - Returns **four sentiment scores**:
-    1. **Negative (`neg_vader`)** – Proportion of negative words.
-    2. **Neutral (`neu_vader`)** – Proportion of neutral words.
-    3. **Positive (`pos_vader`)** – Proportion of positive words.
-    4. **Compound (`compound_vader`)** – A single overall sentiment score.
+### **Conclusions**
+1. We can observe that the trend in COVID-19 related articles is not monotonous and varies month to month with some peaks.
+2. Peaks in articles published related to COVID-19 align with the peaks of new COVID-19 cases. It would be worth investigating whether the increase in new COVID-19 cases influenced researchers to publish faster. Additionally, it could be that the urgency of the situation led reviewers to accelerate the review process, resulting in quicker publication times.
+3. After January 2023, COVID-19 cases started to decrease, and accordingly, the mentions of COVID-19 in MESH Terms decreased as well.
 
-### **Implementation**
-- The script applies **VADER sentiment analysis** to each abstract.
-- Uses **`swifter`** for parallel processing (to speed up computations on large datasets).
-- Calculates **average sentiment scores** across all abstracts.
-
-### **Potential Insights**
-1. **Most abstracts should be neutral**:
-   - A high `neu_vader` score would confirm this assumption.
-2. **Some abstracts may be strongly positive or negative**:
-   - Identifying these cases might reveal interesting patterns.
-   - Are **negative abstracts** about diseases with poor prognoses?
-   - Are **positive abstracts** about breakthrough treatments?
-
-### **Possible Next Steps**
-- **Visualization of sentiment distribution** (e.g., histograms of compound sentiment scores).
-- **Comparison across diseases**: Are some medical conditions associated with more positive/negative sentiment?
-- **Temporal analysis**: Did sentiment shift over time?
+[1] Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - “COVID-19 Pandemic” Published online at OurWorldinData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]
 
 ---
 
