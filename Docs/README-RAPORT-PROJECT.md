@@ -84,7 +84,7 @@ In this file, we perform Exploratory Data Analysis. We answered to the following
 
 ---
 
-## **3. EDA Tokenization**
+## **3. Tokenization**
 ### **File**
 [3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb)  
 
@@ -131,59 +131,31 @@ By keeping all rows we additionaly:
 
 ---
 
-## **5. Keywords Analysis**
+## **4. 4.Sentiment abstract**
+### **File**
+[3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb) 
+
 ### **Purpose**
-Analyzes **trends in research article keywords** to identify **popular and emerging topics**.
+Lorem ipsum
 
-### **Key Steps**
-1. **Loading Data**:
-   - Reads cleaned data containing **article keywords**.
-2. **Keyword Processing**:
-   - Splits **semicolon-separated keywords**.
-   - Converts to **lowercase** and removes **duplicates**.
-3. **Frequency Analysis**:
-   - Uses `Counter()` from Python’s `collections` module.
-   - Identifies **most frequently used keywords**.
-4. **Temporal Trends**:
-   - Tracks **how keyword popularity changes over time**.
-   - **Plots keyword trends** (line plots over publication years).
-
-### **Key Insights**
-- Identifies **most popular biomedical research topics**.
-- Tracks **emerging research areas**.
-
-### **Potential Next Steps**
-- **Comparison with disease mentions** from abstracts.
-- **Clustering similar keywords** using NLP techniques.
-
+### **Conclusions**
+Lorem ipsum
 ---
 
-## **6. MeSH Terms Analysis**
+## **5.1 Keywords Analysis**
+### **File**
+[5.1.Keywords_analysis.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/5.1.Keywords_analysis.ipynb) 
+
 ### **Purpose**
-This notebook examines **MeSH (Medical Subject Headings)** terms in PubMed abstracts.
+This notebook analyzes keyword trends in articles to identify disease patterns over time.
 
-### **Why MeSH Matters**
-- MeSH terms **standardize biomedical indexing**, ensuring that:
-  - Different synonyms (e.g., **"Heart Attack" vs. "Myocardial Infarction"**) map to the **same concept**.
-  - Researchers **retrieve more relevant papers**.
-
-### **Key Analyses**
-1. **Loading and Filtering MeSH Terms**:
-   - Extracts **MeSH term column** from the dataset.
-2. **Frequency Distribution**:
-   - Uses `Counter()` to find **most frequently used MeSH terms**.
-3. **Comparing MeSH Terms with Keywords**:
-   - Checks **overlap** between **MeSH terms and author-defined keywords**.
-4. **Temporal Analysis**:
-   - Tracks **trends in disease research focus** over time.
-
-### **Potential Insights**
-- Identifies **most researched diseases**.
-- Tracks **how focus on specific medical conditions shifts**.
-
-### **Next Steps**
-- **Topic modeling** to see how MeSH terms **relate to research themes**.
-- **Combining with sentiment analysis** to see **how certain diseases are discussed**.
+### **Conclusions**
+1. There is a lack of articles with keywords before 2012.
+2. Keywords are often associated with names or types of diseases.
+3. COVID-19 and SARS-CoV-2 have dominated the keyword trends after 2019.
+4. Alzheimer's disease has shown the most rapid growth in recent years, appearing in keywords less than 100 times in 2014 and more than 800 times in 2024.
+5. Epidemiology and inflammation have also shown significant growth, peaking in 2021, likely due to the high number of articles associated with COVID-19.
+6. Other frequently occurring disease-related keywords exhibit a more consistent growth trend, often peaking in 2021, which is most likely associated with the highest number of articles in that year.
 
 ---
 
