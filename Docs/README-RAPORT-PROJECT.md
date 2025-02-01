@@ -159,33 +159,21 @@ This notebook analyzes keyword trends in articles to identify disease patterns o
 
 ---
 
-## **7. Sentiment Analysis of Medical Abstracts (Version 1)**
+## **5.2 MeSH Analysis**
+### **File**
+[5.2.Mesh_analysis.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/5.2.Mesh_analysis.ipynb) 
+
 ### **Purpose**
-This notebook sets the foundation for **analyzing sentiment in scientific abstracts**, particularly from medical research articles. The core assumption is that most abstracts should be **neutral**, given the objective nature of scientific writing. However, this needs empirical verification.
+This notebook explores the use of MeSH (Medical Subject Headings) [1] terms in PubMed articles. MeSH terms provide a standardized way to categorize and index biomedical topics, helping researchers in finding relevant studies more efficiently. By unifying different terms (e.g., "heart attack" and "myocardial infarction"), they enhance the precision and comprehensiveness of searches. We analyze these terms to identify trends in disease topics within the articles.
 
-### **Data Preprocessing**
-- The dataset (`PubMedAbstracts_final.parquet`) is loaded and examined.
-- **Missing data handling**:
-  - Identifies and removes abstracts that are missing (verified to be absent from the original articles rather than lost due to processing errors).
-- **Filtering out problematic data**:
-  - Excludes abstracts from **1994** and **2025** (likely due to low counts or inconsistencies).
-- **Feature selection**:
-  - Retains relevant columns for further analysis, including:
-    - **Title**
-    - **Journal**
-    - **Authors**
-    - **MeSH terms (Medical Subject Headings)**
-    - **Keywords**
-    - **Parsed Date**
-    - **Conflict of Interest statements (COI)**
+### **Conclusions**
+1. The most common MeSH terms are general terms rather than specific disease names. The top terms include 'humans' (1 057 871 occurrences), 'female' (472 540 occurrences), 'male' (432 617 occurrences), 'middle aged' (289 180 occurrences), 'adult' (283 915 occurrences), and 'aged' (227 184 occurrences). The total number of unique MeSH terms is 27 087.
+2. The most common group of diseases in MeSH terms are chronic diseases, followed by HIV infections and cardiovascular diseases.
+3. In 2024, the most articles were related to Alzheimer's disease (rapidly growing trend), cardiovascular diseases (growing trend), HIV (decreasing trend), and neoplasms (growing trend).
+4. In recent years there was a rapid growth in the number of articles related to Alzheimer's disease. The increase was slow from 1995 to 2014, but from 2015 onwards, there has been a strong rise in related articles, from around 800 articles per year in 2015 to 2000 articles per year in 2024.
+5. For HIV infection-related articles, there was a growing trend from 1995 to 2021. However, after 2021, the number of HIV-related articles has been decreasing. This decline might be due to advancements in HIV treatment, making the disease more manageable. However, this observation requires further analysis.
 
-### **What This Notebook Achieves**
-- It **cleans** and **prepares** the data but does **not** yet perform sentiment analysis.
-- The filtering ensures that only **valid abstracts** are included in the next steps.
-
-### **Limitations and Next Steps**
-- The notebook does **not** yet provide sentiment insights.
-- Future steps include **applying NLP models** to classify abstracts based on their sentiment.
+[1] National Library of Medicine. Medical Subject Headings (MeSH). (https://www.nlm.nih.gov/mesh/meshhome.html)
 
 ---
 
