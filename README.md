@@ -154,7 +154,7 @@ By keeping all rows we additionaly:
 ***Document-Term Matrix (DTM):*** We used `CountVectorizer` to convert each document (joined tokens) into a bag-of-words representation, ignoring terms that appear in fewer than min_df documents and more than max_df proportion of documents. 
 
 
-***Latent Dirichlet Allocation (LDA):*** We chose LDA for unsupervised topic modeling, which infers latent topics by assuming documents are mixtures of hidden topics, and topics are distributions over words.
+***Latent Dirichlet Allocation (LDA):*** We chose LDA for unsupervised topic modeling, which infers latent topics by assuming documents are mixtures of hidden topics, and topics are distributions over words. We did an online partial fit approach due to very large dataset.
 
 - *Why LDA?: LDA is a classic, interpretable probabilistic model that helped us discover hidden thematic structure in large corpora without labeled data. The mixture-of-topics approach is flexible for biomedical literature, where documents often discuss multiple related concepts.*
 
