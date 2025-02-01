@@ -209,82 +209,16 @@ In this notebook, we will investigate the network between the authors and co-aut
 
 ---
 
-## **10. COVID-19 Analysis**
+## **8. Sentiment Abstracts**
+### **File**
+[8.Sentiment_abstract.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/8.Sentiment_abstract.ipynb) 
+
 ### **Purpose**
-This notebook explores the relationship between **COVID-19 research publications** and **real-world COVID-19 case trends**.
+In this notebook, we investigate the sentiment present in article abstracts.
 
-### **Data Sources**
-- **PubMed abstracts** related to COVID-19.
-- **COVID-19 case data** from **Our World in Data (`owid-covid-data.csv`)**.
-
-### **Key Analyses**
-1. **Filtering COVID-19 research articles**:
-   - Selects abstracts that contain **COVID-19-related MeSH terms**.
-2. **Reading COVID-19 case data**:
-   - Uses external pandemic statistics (cases, deaths).
-3. **Potential correlation analysis** (not yet implemented):
-   - Compare **research output** to **case trends**.
-
-### **Potential Insights**
-- **Did research output peak after major outbreaks?**
-- **Was there a delay between case spikes and research publications?**
-- **What COVID-19 topics were studied the most?**
-
-### **Possible Next Steps**
-- **Time-series visualization**: Overlaying research volume and COVID-19 cases.
-- **Topic modeling on COVID-19 abstracts**: Identifying common research themes.
-- **Comparing different countries**: Were some nations more active in COVID-19 research?
-
----
-
-## **11. Network Analysis of Co-Authorship**
-### **Purpose**
-This notebook explores **collaboration networks** among medical researchers.
-
-### **Methodology**
-- Uses **NetworkX** to create a **graph of co-authorship**:
-  - **Nodes** = Authors
-  - **Edges** = Co-authored papers
-- Identifies **Top 10 Most Published Authors**.
-
-### **Findings**
-- **David A. Bennett** has **700+ disease-related publications**.
-- Identifies other **highly collaborative researchers**.
-
-### **Potential Insights**
-- **Who are the most influential researchers?**
-- **Which researchers frequently collaborate?**
-- **Are there isolated researchers?**
-
-### **Possible Next Steps**
-- **Visualizing the network** (graph plots).
-- **Clustering analysis**: Identifying research groups.
-- **Topic-based author analysis**: Which diseases do different clusters study?
-
----
-# **Final Thoughts**
-
-## **Overall Summary**
-
-
-### **Early Stage Data Processing**
-| Notebook | Purpose | Key Findings |
-|----------|---------|-------------|
-| **API Data Gathering** | Retrieves PubMed data via API. | Stores abstracts, titles, authors, MeSH terms, and keywords. |
-| **Parquet Early Data Cleaning** | Cleans and preprocesses raw data. | Removes missing values, filters years, selects key columns. |
-| **EDA** | Explores dataset structure. | Analyzes trends in publication years, journals, and abstract lengths. |
-| **EDA Tokenization** | Processes text for NLP analysis. | Tokenizes abstracts using spaCy, Hugging Face, and dictionary-based methods. |
-| **Keywords Analysis** | Examines keyword trends. | Identifies most common and rising research topics. |
-| **MeSH Terms Analysis** | Analyzes standardized biomedical indexing. | Tracks research focus over time using MeSH classifications. |
-
-
-### **Later Stage Analysis**
-| Notebook | Purpose | Key Findings |
-|----------|---------|-------------|
-| **Sentiment Analysis v1** | Data preparation for sentiment analysis. | Filters abstracts, removes inconsistencies. |
-| **Sentiment Analysis v2** | Applies sentiment analysis (VADER). | Abstracts likely mostly neutral, but some variation exists. |
-| **Topic Modeling** | Identifies most frequently mentioned diseases. | Lists top 40 diseases, potential for trend analysis. |
-| **COVID-19 Analysis** | Examines COVID-19 research trends vs. real-world cases. | Plans to correlate research volume with case numbers. |
-| **Network Analysis** | Investigates co-authorship networks. | Identifies top authors, including David A. Bennett. |
+### **Conclusions**
+1. On average abstracts, as expected, are neutral.
+2. Sentiment in abstracts does not change significantly over time. There is only a slight decrease in negative sentiment from 2010 onwards.
+3. Any month in a year is not associated with negative sentiment in abstracts. For all of the months, sentiment stays more or less the same.
 
 ---
