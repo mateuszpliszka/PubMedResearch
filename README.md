@@ -115,7 +115,7 @@ Use them as:
 
 ## Notebooks Folder
 
-///text
+```text
 Notebooks/
 ├── 0.API_Data_Gathering.ipynb          # Notebook for querying PubMed APIs, gathering raw data
 ├── 1.Parquet_Early_Data_Cleaning.ipynb # Minimal cleaning & converting raw JSON to Parquet
@@ -129,7 +129,7 @@ Notebooks/
 ├── 6.Covid.ipynb                       # Focus on COVID-19 subset or domain-specific analysis
 ├── 7.Network.ipynb                     # Co-author or disease network analysis (graph-based)
 └── archive/                            # Old or archived notebooks
-///
+```
 
 These notebooks guide you from **data gathering & minimal cleaning** through **tokenization, sentiment, and topic modeling** to **network analysis**. 
 
