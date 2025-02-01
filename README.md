@@ -136,7 +136,16 @@ By keeping all rows we additionaly:
 [4.Analysis_TopicModelling.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/4.Analysis_TopicModelling.ipynb) 
 
 ### **Purpose**
-Lorem ipsum
+
+- Analyzing how frequently different disease-related terms appear in medical publications.
+
+- Observing long-term growth in research interest for various diseases.
+
+- Tracking the rise and fall of different medical topics over decades.
+
+- Identifying spikes in specific terms, such as the surge in COVID-related research.
+
+**Process**
 
 ***Data Cleaning & Tokenization:*** We started by lemmatizing tokens in merged_tokens_lemmatized, removing punctuation, and standardizing morphological variants (e.g., “tumors” → “tumor”).
 
