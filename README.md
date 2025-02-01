@@ -133,13 +133,41 @@ By keeping all rows we additionaly:
 
 ## **4. 4.Topic Modelling**
 ### **File**
-[3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb) 
+[4.Analysis_TopicModelling.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/4.Analysis_TopicModelling.ipynb) 
 
 ### **Purpose**
 Lorem ipsum
 
-### **Conclusions**
-Lorem ipsum
+***Data Cleaning & Tokenization:*** We started by lemmatizing tokens in merged_tokens_lemmatized, removing punctuation, and standardizing morphological variants (e.g., “tumors” → “tumor”).
+
+**Vocabulary Selection:*** We optionally restricted to the top 1,000 frequent tokens to reduce dimensionality and focus on the most common terms.
+
+***Document-Term Matrix (DTM):*** We used `CountVectorizer` to convert each document (joined tokens) into a bag-of-words representation, ignoring terms that appear in fewer than min_df documents and more than max_df proportion of documents. 
+
+
+***Latent Dirichlet Allocation (LDA):*** We chose LDA for unsupervised topic modeling, which infers latent topics by assuming documents are mixtures of hidden topics, and topics are distributions over words. We either did a batch fit (if manageable) or an online partial_fit approach (due to very large datset).
+
+- *Why LDA?: LDA is a classic, interpretable probabilistic model that helped us discover hidden thematic structure in large corpora without labeled data. The mixture-of-topics approach is flexible for biomedical literature, where documents often discuss multiple related concepts.*
+
+
+
+***Extracting Topics:*** Each topic is described by its top words. We interpreted topic by looking at these high-weight words. The Labeling could also be done later on, but for now we decided to leave it be as there might be some work neede with perplexity (although in both original dataset and top 1000 tokens dataset we had pretty low perplexity in comparison to what was there in the beggning original; 300 vs previously over 1 million and perplexity of 1000 tokens dataset ; 64 perplexity (lowest one until now))
+
+***Interpreting Results:***
+
+- We computed topic coherence (using Gensim’s CoherenceModel) to measure how semantically consistent the top words are. 0.34 - 0.37 ; Although it may seem like a low score, We think that for dataset related to very specific fields, that have words with many meanings, and many of which are in latin; it's quite a high score
+
+- We analyzed topic trends over time (grouping the doc-topic distributions by year).
+
+- We also examined token-level trends (like “cancer” or “hiv”) by counting how many documents mention each token each year.
+
+- Cancer & chronic diseases dominate long-term research trends.
+
+- COVID had a temporary but significant impact on medical publications.
+
+- The field of medical research is evolving, with some topics getting more attention over time. 
+
+- teady growth in the number of documents mentioning key diseases.
 
 ---
 
