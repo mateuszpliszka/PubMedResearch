@@ -1,200 +1,226 @@
-# PubMed Research: Data Gathering, Cleaning, and Analysis Pipeline
+# The Most Popular Diseases in Medical Articles on PubMed
 
-This repository provides a comprehensive pipeline to gather, preprocess, analyze, and model PubMed abstracts for biomedical research. 
-It includes scripts for API data collection, cleaning, tokenization, sentiment analysis, and topic modeling, enabling large-scale text mining on disease-related publications.
+Authors:
+- Maciej Kuchciak
+- Mateusz Pliszka
+- Łukasz Janisiów
 
-## Table of Contents
+## Project Overview:
+The main goal of this analysis is to identify the most popular diseases in medical articles on PubMed from January 1994 to December 2024. The analysis includes more than 1 million articles, focusing primarily on titles, abstracts, and MeSH terms. 
 
-1. [Overview](#overview)  
-2. [Project Structure](#project-structure)  
-3. [Data Folders](#data-folders)  
-4. [Functions Folder](#functions-folder)  
-5. [Notebooks Folder](#notebooks-folder)  
-6. [Usage & Instructions](#usage--instructions)  
-7. [Dataset Description](#dataset-description)  
-8. [Potential Applications](#potential-applications)  
-9. [License](#license)
+Additionally, the analysis investigates:
+- Sentiment of abstracts
+- Network between authors and their co-authors
+- Connection between COVID-19 infection rates and the number of COVID-19 related articles
+- Exploratory Data Analysis to find others interesting insights from data
+
+Our analysis aims to answer the following questions:
+- What is the most popular illness describe in medical articles from 1994 to 2024? How does it vary each year?
+- Is there a correlation between COVID-19 cases and the number of related articles?
+- Is there a noticeable sentiment in abstracts? Does it change over time?
+- Are there any other features that change over time in scientific articles?
+---
+## **0. API Data Gathering**
+### **File** 
+[0.API_Data_Gathering.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/0.API_Data_Gathering.ipynb)  
+### **Purpose**
+This Jupyter Notebook is designed to fetch and process PubMed articles using the PubMed API. It provides a complete pipeline for querying PubMed, fetching article details, and saving the data for further analysis.
+
+The following types of data are downloaded for each PubMed article:
+   - uid: The unique PubMed ID (PMID) of the article.
+   - title: The title of the article. 
+   - journal: The name of the journal in which the article was published. 
+   - pubdate: The publication date of the article in the format "YYYY-MM-DD".
+   - abstract_sections: A list of sections within the article's abstract, including labels, categories, and text.
+   - authors: A list of authors, including their names, initials, ORCID IDs, and affiliations.
+   - mesh_terms: Medical Subject Headings (MeSH) terms associated with the article, including descriptors, major topics, and qualifiers.
+   - keywords: Keywords associated with the article.
+
+### **Conclusions**
+1. The total number of articles downloaded is 1,460,893.
 
 ---
 
-## Overview
+## **1. Parquet Early Data Cleaning**
+### **File**
+[1.Parquet_Early_Data_Cleaning.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/1.Parquet_Early_Data_Cleaning.ipynb)  
+### **Purpose**
+This Jupyter Notebook is designed to process and clean a collection of JSON files containing article data.
+- Load raw JSON data containing PubMed abstracts, flatten the nested structures, and convert the data into Parquet format for efficient storage and processing.
+- Address inconsistencies in publication date formats and eliminate duplicate articles.
 
-Focus: Analyze disease-related PubMed abstracts (1995–2024), including entity recognition, sentiment analysis (BioMedBERT), tokenization, netork analysis, and topic modeling.
+### **Conclusions**
+1. The downloaded data contained 401,132 duplicate rows, accounting for 27.5% of the dataset.
+2. The final dataset used for analysis contains 1,059,761 unique rows after deduplication.
 
-Key features:
-- Automated abstract fetching from PubMed (via E-utilities/API).
-- Cleaning & deduplication of large datasets.
-- Multiple token fields (simple, huggingface, spaCy disease tokens).
-- Sentiment analysis with a pre-trained BiomedBERT model.
-- Topic modeling (LDA) and potential network analysis. 
-- network analysis
-- ADD MORE
-
----
-
-## Project Structure
-
-```text
-PubMedResearch/
-├── Backup/                     # Archives or backup versions of notebooks/files
-│   └── Notebooks_backup_27012025/
-├── Data/                       # All data-related folders and files
-│   ├── 0.Raw/                  # Original raw data (PubMed API results)
-│   │   └── API_data/
-│   │       └── results/        # JSON or other raw output from PubMed queries
-│   ├── 1.EarlyCleaned/         # Early-stage cleaned data (e.g., deduplicated, basic cleaning)
-│   │   ├── cleaned_parquet/
-│   │   │   └── final/          # Final cleaned parquet files for stage 1
-│   │   └── raw_parquet/        # Parquet outputs of initial flattening from JSON
-│   ├── 2.Processed/            # Processed or partially analyzed data
-│   │   ├── ModellingData/      # Data prepared for modeling (topic modeling, etc.)
-│   │   └── SentimentAnalysis/  # Data or results specifically for sentiment tasks
-│   │       ├── Labeled_Chunks/ # Sentiment-labeled chunks
-│   │       └── Chunks/         # Possibly chunked abstracts for pipeline
-│   ├── 3.Outputs/              # Final or intermediate outputs (visualizations, CSVs) for future development
-│   └── 4.AdditionalData/       # Misc/domain-specific data (COVID-19, etc.)
-│       └── Covid-19/
-├── Docs/                       # Documentation files (e.g., extra .md files, user guides)
-├── Functions/                  # Python scripts with reusable functions (importable modules)
-│   ├── parquet_reader.py       # Utility to read Parquet in batches
-│   ├── parquet_save_and_merge.py  # Save DF in batches & merge
-│   └── __pycache__/            # Auto-generated Python cache
-├── Helpers/                    # Various helper files or images
-│   └── kaggle_picture/
-├── Notebooks/                  # Main Jupyter notebooks (active dev or final)
-│   ├── 0.API_Data_Gathering.ipynb          # Notebook for querying PubMed APIs and gathering raw data
-│   ├── 1.Parquet_Early_Data_Cleaning.ipynb # Minimal cleaning & converting raw JSON to Parquet
-│   ├── 2.EDA_Tokenization.ipynb            # Exploratory data analysis and tokenization strategies
-│   ├── 3.1.Keywords_analysis.ipynb         # Analysis of keyword frequencies or patterns
-│   ├── 3.2.Mesh_analysis.ipynb             # Analysis of MeSH terms across abstracts
-│   ├── 3.EDA.ipynb                         # Additional EDA (may combine or refine the above steps)
-│   ├── 4.Sentiment_abstract.ipynb          # Initial sentiment analysis on abstracts
-│   ├── 4.Sentiment_abstract_vol2.ipynb     # Extended or second phase of sentiment analysis
-│   ├── 5.Analysis_TopicModelling.ipynb     # LDA or other topic modeling steps on merged tokens
-│   ├── 6.Covid.ipynb                       # Focused notebook on COVID-related data or analysis
-│   ├── 7.Network.ipynb                     # Co-author or disease network analysis (graphs/networkX)                          
-│   └── archive/                # Old or archived notebooks
-├── ScispaCy/                   # Possibly environment or code related to SciSpaCy usage
-└── README.md (and/or other top-level files like .gitignore, LICENSE, etc.)
-```
 
 ---
 
-## Data Folders
+## **2. Exploratory Data Analysis (EDA)**
+### **File**
+[2.EDA.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/2.EDA.ipynb)  
 
-- **Data/0.Raw/**  
-  - **API_data/results/**: Original JSON output from PubMed API queries.
-- **Data/1.EarlyCleaned/**  
-  - **raw_parquet/**: Flattened from JSON → Parquet.  
-  - **cleaned_parquet/** + **final/**: Post-dedup and minimal cleaning outputs.
-- **Data/2.Processed/**  
-  - **ModellingData/**: Data prepared for advanced tasks (like topic modeling).  
-  - **SentimentAnalysis/**:  
-    - **Labeled_Chunks/**: Final or intermediate sentiment-labeled data.  
-    - **Chunks/**: Possibly chunked data for pipeline steps.
-- **Data/3.Outputs/**: Final results or CSV logs.  
-- **Data/4.AdditionalData/**: External or specialized domain data (e.g., COVID-19).
+### **Purpose**
+In this file, we perform Exploratory Data Analysis. We answered to the following questions:
 
----
+- Who is the most active publisher?
+- What is the most popular journal?
+- Is the number of co-authors growing?
+- Are there other trends in the articles?
 
-## Functions Folder
+### **Conclusions**
+1. An increasing trend is observed across various domains, including the number of articles published per year, but also the number of authors per article, the number of words in abstracts, and the number of words per title.
+2. The highest average number of articles are published in January, which aligns with the findings from the article "April publishing lull follows end-of-year academic flurry" [1]. This study stated that January and November are the most popular months for publishing.
+3. The number of authors per article is on the rise, increasing from an average of approximately 5 authors per article in 1995 to around 11 authors per article in 2024. The overall average number of authors per article from 1995 to 2024 is 6.54.
+4. The average number of words in abstracts has increased from slightly below 190 in 1995 to over 230 by 2024. The overall average number of words in abstracts for the entire period is 210.
+5. The average number of words in titles has been increasing over the years, rising from 11.5 in 1995 to just over 14 in 2024. This represents an approximate 20% increase over 29 years, mirroring the same percentage increase observed in the length of abstracts.
+6. The top publisher in our dataset is David A. Bennett [2], who has authored over 700 filtered articles related to diseases. In his Google Scholar profile, he has 1195 articles.
+7. The most popular journal in our dataset is "Scientific Reports" with 8,778 publications, followed by "Clinical Infectious Diseases" with 5,953 publications, and "Nature Communications" with 5,537 publications. The least popular journal among the top 10 is "Proceedings of the National Academy of Sciences of the United States of America" with 3,537 publications.
 
-- **parquet_reader.py**  
-  Utility to read large Parquet files in chunks, typically with a progress bar.
+[1] https://www.nature.com/nature-index/news/april-publishing-lull-follows-end-of-year-academic-flurry
 
-- **parquet_save_and_merge.py**  
-  Helper to split large DataFrames into batches, save them, then merge all batches back into a single Parquet file.
+[2] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
 
-Use them as:
-
-***from Functions.parquet_reader import read_parquet_in_batches_with_progress***
-
-***from Functions.parquet_save_and_merge import save_and_merge_in_batches***
 
 ---
 
-## Notebooks Folder
+## **3. Tokenization**
+### **File**
+[3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb)  
 
-```text
-Notebooks/
-├── 0.API_Data_Gathering.ipynb          # Notebook for querying PubMed APIs, gathering raw data
-├── 1.Parquet_Early_Data_Cleaning.ipynb # Minimal cleaning & converting raw JSON to Parquet
-├── 2.EDA_Tokenization.ipynb            # Exploratory data analysis and tokenization strategies
-├── 3.1.Keywords_analysis.ipynb         # Analysis of keyword frequencies or patterns
-├── 3.2.Mesh_analysis.ipynb             # Analysis of MeSH terms
-├── 3.EDA.ipynb                         # Additional EDA (combining earlier steps)
-├── 4.Sentiment_abstract.ipynb          # Initial sentiment analysis on abstracts
-├── 4.Sentiment_abstract_vol2.ipynb     # Second phase or extended sentiment analysis
-├── 5.Analysis_TopicModelling.ipynb     # LDA or other topic modeling on merged tokens
-├── 6.Covid.ipynb                       # Focus on COVID-19 subset or domain-specific analysis
-├── 7.Network.ipynb                     # Co-author or disease network analysis (graph-based)
-└── archive/                            # Old or archived notebooks
-```
+### **Purpose**
+This notebook processes and analyzes PubMed abstracts and titles to detect diseases using various tokenization methods and SciSpacy's biomedical NER model.
 
-These notebooks guide you from **data gathering & minimal cleaning** through **tokenization, sentiment, and topic modeling** to **network analysis**. 
+Tokenization Methods:
+1. **Simple Tokenization**: Basic whitespace and punctuation-based tokenization.
+2. **Hugging Face Tokenization**: Tokenization using the Hugging Face `distilbert-base-uncased` model.
+3. **Dictionary-Based Disease Detection**: Filtering tokens based on a predefined disease dictionary.
+4. **SciSpacy Biomedical NER**: Using the `en_ner_bc5cdr_md` model to detect disease entities.
 
----
+### **Conclusions/Final Decision**
+The goal was to ensure high-quality data for further analysis and modelling while retaining as much relevant information as possible.
 
-## Usage & Instructions
+**Choices Considered**:
 
-1. **Environment Setup**  
-   Install dependencies from `requirements.txt`:
+Title only: Retain rows with illness-related tokens in the title.
+*Result*: ~1,000,000 → 480,000 rows removed (~520,000 retained).
 
-   pip install -r requirements.txt
+- Abstract + Title: Retain rows with tokens in either title or abstract.
+*Result*: ~1,000,000 → 84,000 rows removed (~916,000 retained).
 
-   2. **Data Pipeline**  
-- **Run** `0.API_Data_Gathering.ipynb` to fetch raw data from PubMed.  
-- **Process** with `1.Parquet_Early_Data_Cleaning.ipynb` for minimal cleaning & Parquet conversion.  
-- **EDA & Tokenization** (`2.EDA_Tokenization.ipynb`) to explore data distribution, refine tokenization.  
-- **Sentiment Analysis** with `4.Sentiment_abstract.ipynb` or `4.Sentiment_abstract_vol2.ipynb` (using BioMedBERT).  
-- **Topic Modeling** with `5.Analysis_TopicModelling.ipynb`.  
-- Additional tasks: **keywords**/MeSH analysis, networks, etc.
+- Abstract + Title + MeSH terms: Include tokens found in MeSH terms.
+*Result*: ~1,000,000 → 60,000rows removed (~940,000 retained).
 
-3. **Saving & Reading Parquet**  
-- Use **Functions/** scripts for batch saving or reading large datasets:
-  ```
-  from Functions.parquet_save_and_merge import save_and_merge_in_batches
-  
-  # Example usage
-  result_path = save_and_merge_in_batches(
-      df, batch_size=100_000, output_folder="Data/2.Processed/ModellingData", final_filename="merged.parquet"
-  )
-  ```
+- Abstract + Title + MeSH + Hybrid Filtering: Use advanced filtering (e.g., hybrid matching and simpler keyword matching).
+*Result*: ~1,000,000 → 54,000 rows removed (~946,000 retained).
 
-4. **Outputs**  
-- Processed data: in **Data/1.EarlyCleaned** or **Data/2.Processed** subfolders.
-- Final or advanced outputs: **Data/3.Outputs**.
+- Retain All Rows: Do not remove rows based on token presence.
+
+**Final Decision**:
+We chose Option 5 to retain all rows. This decision was based on the reasoning that data lacking illness-related tokens is not inherently irrelevant and there may be possibility to check these inputs (articles) and see what's the problem with them. 
+
+By keeping all rows we additionaly:
+
+- We maintain the integrity and diversity of the dataset.
+
+- Downstream analyses remain flexible, as token filtering can be performed at a later stage if necessary.
+
+- It enables broader exploration and modeling possibilities without prematurely discarding data.
+
+- By taking this approach, the dataset remains inclusive, ensuring no potential insights are lost. This aligns with our goal of providing a comprehensive resource for PubMed data analysis.
 
 ---
 
-## Dataset Description
+## **4. 4.Topic Modelling**
+### **File**
+[3.Tokenization.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/3.Tokenization.ipynb) 
 
-This dataset (covering ~1 million abstracts from ~1995–2024) facilitates large-scale text mining and longitudinal research on biomedical publications:
-- **Focus**: English, US affiliation, disease related terms (health problems are included too), humans.
-- **File Highlights**:
-- `P5_final_new.parquet`: Comprehensive fields & multiple token columns (`_simple`, `_hf`, `_spacy`).
-- `PubMedAbstracts_final.parquet`: Possibly smaller or final deduplicated dataset.
-- **Token Fields**:
-- `*_simple`: Lightly cleaned tokens (punctuation removed, bracket citations stripped).
-- `*_hf`: Hugging Face subword tokens for BERT-like models.
-- `*_spacy`: Specialized disease entity tokens extracted via spaCy.
-- **Dedup**: e.g., 401,132 duplicates removed. 
-- **Sentiment**: Auto-labeled using a BioMedBERT-based pipeline.
+### **Purpose**
+Lorem ipsum
+
+### **Conclusions**
+Lorem ipsum
 
 ---
 
-## Potential Applications
+## **5.1 Keywords Analysis**
+### **File**
+[5.1.Keywords_analysis.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/5.1.Keywords_analysis.ipynb) 
 
-1. **Longitudinal Disease Study**: Explore how publication rates or disease mentions shift by year, correlate with real-world outbreaks.
-2. **NLP**: Summarization, NER, or classification tasks (fine-tune domain LMs on large corpora).
-3. **Topic Modeling**: LDA or advanced methods to discover thematic clusters (see `5.Analysis_TopicModelling.ipynb`).
-4. **Network Analysis**: Build co-author or disease networks for collaboration or comorbidity patterns.
-5. **Bibliometric Trends**: Evaluate spikes in research on certain conditions, or correlation with policy changes.
+### **Purpose**
+This notebook analyzes keyword trends in articles to identify disease patterns over time.
+
+### **Conclusions**
+1. There is a lack of articles with keywords before 2012.
+2. Keywords are often associated with names or types of diseases.
+3. COVID-19 and SARS-CoV-2 have dominated the keyword trends after 2019.
+4. Alzheimer's disease has shown the most rapid growth in recent years, appearing in keywords less than 100 times in 2014 and more than 800 times in 2024.
+5. Epidemiology and inflammation have also shown significant growth, peaking in 2021, likely due to the high number of articles associated with COVID-19.
+6. Other frequently occurring disease-related keywords exhibit a more consistent growth trend, often peaking in 2021, which is most likely associated with the highest number of articles in that year.
 
 ---
 
-## License
+## **5.2 MeSH Analysis**
+### **File**
+[5.2.Mesh_analysis.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/5.2.Mesh_analysis.ipynb) 
 
-This project is licensed under the MIT License.  
-See the [`LICENSE`](LICENSE) file for details.
+### **Purpose**
+This notebook explores the use of MeSH (Medical Subject Headings) [1] terms in PubMed articles. MeSH terms provide a standardized way to categorize and index biomedical topics, helping researchers in finding relevant studies more efficiently. By unifying different terms (e.g., "heart attack" and "myocardial infarction"), they enhance the precision and comprehensiveness of searches. We analyze these terms to identify trends in disease topics within the articles.
 
+### **Conclusions**
+1. The most common MeSH terms are general terms rather than specific disease names. The top terms include 'humans' (1 057 871 occurrences), 'female' (472 540 occurrences), 'male' (432 617 occurrences), 'middle aged' (289 180 occurrences), 'adult' (283 915 occurrences), and 'aged' (227 184 occurrences). The total number of unique MeSH terms is 27 087.
+2. The most common group of diseases in MeSH terms are chronic diseases, followed by HIV infections and cardiovascular diseases.
+3. In 2024, the most articles were related to Alzheimer's disease (rapidly growing trend), cardiovascular diseases (growing trend), HIV (decreasing trend), and neoplasms (growing trend).
+4. In recent years there was a rapid growth in the number of articles related to Alzheimer's disease. The increase was slow from 1995 to 2014, but from 2015 onwards, there has been a strong rise in related articles, from around 800 articles per year in 2015 to 2000 articles per year in 2024.
+5. For HIV infection-related articles, there was a growing trend from 1995 to 2021. However, after 2021, the number of HIV-related articles has been decreasing. This decline might be due to advancements in HIV treatment, making the disease more manageable. However, this observation requires further analysis.
+
+[1] National Library of Medicine. Medical Subject Headings (MeSH). (https://www.nlm.nih.gov/mesh/meshhome.html)
+
+---
+
+## **6. COVID-19 timeseries closer look**
+### **File**
+[5.2.Covid.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/6.Covid.ipynb) 
+
+### **Purpose**
+In this section, we will closely examine the number of COVID-19-related articles and compare them to the new COVID-19 cases worldwide [1].
+
+### **Conclusions**
+1. We can observe that the trend in COVID-19 related articles is not monotonous and varies month to month with some peaks.
+2. Peaks in articles published related to COVID-19 align with the peaks of new COVID-19 cases. It would be worth investigating whether the increase in new COVID-19 cases influenced researchers to publish faster. Additionally, it could be that the urgency of the situation led reviewers to accelerate the review process, resulting in quicker publication times.
+3. After January 2023, COVID-19 cases started to decrease, and accordingly, the mentions of COVID-19 in MESH Terms decreased as well.
+
+[1] Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - “COVID-19 Pandemic” Published online at OurWorldinData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]
+
+---
+
+## **7. Network between the authors and co-authors of the articles**
+### **File**
+[7.Network.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/7.Network.ipynb) 
+### **Purpose**
+In this notebook, we will investigate the network between the authors and co-authors of the articles.
+
+### **Conclusions**
+1. The top publisher in our dataset is David A. Bennett [1], who has a little more than 700 filtered articles with diseases. In his Google Scholar profile, he has 1195 articles in total.
+2. Among the top 30 publishers, the strongest connection is between Blennow Kaj and Zetterberg Henrik, who have co-authored around 160 articles together.
+3. In some articles, the same name and surname appear more than once. However, this is not a mistake. Sometimes people with the same names co-author the same article. For example, two people named Li Li co-authored 8 articles.
+
+[1] https://scholar.google.com/citations?user=m_NIro4AAAAJ&hl=en
+
+[2] https://www.nature.com/articles/nbt.1665
+
+---
+
+## **8. Sentiment Abstracts**
+### **File**
+[8.Sentiment_abstract.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/8.Sentiment_abstract.ipynb) 
+
+### **Purpose**
+In this notebook, we investigate the sentiment present in article abstracts.
+
+### **Conclusions**
+1. On average abstracts, as expected, are neutral.
+2. Sentiment in abstracts does not change significantly over time. There is only a slight decrease in negative sentiment from 2010 onwards.
+3. Any month in a year is not associated with negative sentiment in abstracts. For all of the months, sentiment stays more or less the same.
+
+---
