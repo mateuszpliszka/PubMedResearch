@@ -1,14 +1,13 @@
-# DEEP DIVE INTO NOTEBOOKS
-
 # The Most Popular Diseases in Medical Articles on PubMed
 
 Authors:
-- Łukasz Janisiów
 - Maciej Kuchciak
 - Mateusz Pliszka
+- Łukasz Janisiów
 
 ## Project Overview:
 The main goal of this analysis is to identify the most popular diseases in medical articles on PubMed from January 1994 to December 2024. The analysis includes more than 1 million articles, focusing primarily on titles, abstracts, and MeSH terms. 
+
 Additionally, the analysis investigates:
 - Sentiment of abstracts
 - Network between authors and their co-authors
@@ -22,9 +21,11 @@ Our analysis aims to answer the following questions:
 - Are there any other features that change over time in scientific articles?
 ---
 ## **1. API Data Gathering**
-- **File:** [0.API_Data_Gathering.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/0.API_Data_Gathering.ipynb)  
+### **File** 
+[0.API_Data_Gathering.ipynb](https://github.com/MPKuchciak/PubMedResearch/blob/main/Notebooks/0.API_Data_Gathering.ipynb)  
 ### **Purpose**
 This Jupyter Notebook is designed to fetch and process PubMed articles using the PubMed API. It provides a complete pipeline for querying PubMed, fetching article details, and saving the data for further analysis.
+
 The following types of data are downloaded for each PubMed article:
    - uid: The unique PubMed ID (PMID) of the article.
    - title: The title of the article. 
@@ -36,29 +37,6 @@ The following types of data are downloaded for each PubMed article:
    - keywords: Keywords associated with the article.
 
 The total number of articles downloaded is 1,460,893.
-
-
-
-
-### **Steps Involved**
-1. **Establishing API Connection**:
-   - Uses **Python libraries like `requests` or `Bio.Entrez`** to fetch data.
-   - Likely queries a biomedical literature database (e.g., **PubMed**).
-2. **Fetching Raw Data**:
-   - Retrieves metadata, including:
-     - **Abstracts**
-     - **Titles**
-     - **Authors**
-     - **MeSH terms**
-     - **Keywords**
-     - **Publication Dates**
-3. **Saving Data Efficiently**:
-   - Stores the retrieved data in **json format** (optimized for large datasets).
-   - Uses **batch processing** to handle API rate limits and ensure efficiency.
-
-### **Potential Next Steps**
-- **Merging different API sources** for richer datasets.
-- **Adding DOI-based retrieval** for full-text analysis.
 
 ---
 
