@@ -5,11 +5,14 @@
 *.json
 *.parquet
 
-# Ignore files larger than 100MB
+# Ignore files larger than 100MB (Note: Git doesn't support direct size-based ignoring, use Git hooks or Git LFS)
 *.bigfile
 maxsize=100MB
 
-# Do not ignore folder structures
+# Ignore the Data/99.Backup/ folder and all its contents
+Data/99.Backup/
+
+# Do not ignore other folder structures
 !Data/
 !Data/0.Raw/
 !Data/1.EarlyCleaned/
