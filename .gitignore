@@ -5,6 +5,10 @@
 *.json
 *.parquet
 
+# Ignore files larger than 100MB
+*.bigfile
+maxsize=100MB
+
 # Do not ignore folder structures
 !Data/
 !Data/0.Raw/
@@ -15,5 +19,6 @@
 !Data/2.Processed/EDA/
 !Data/2.Processed/ModellingData/
 
+# Ignore Python cache files
 __pycache__/
 *.pyc
