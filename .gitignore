@@ -5,9 +5,13 @@
 *.json
 *.parquet
 
-# Ignore files larger than 100MB (Note: Git doesn't support direct size-based ignoring, use Git hooks or Git LFS)
-*.bigfile
-maxsize=100MB
+# Ignore all .rar and .tar.gz files
+*.rar
+*.tar.gz
+
+# Ignore files larger than 100MB (Git does NOT support size-based ignores, so remove from tracking manually)
+Data/2.Processed/SentimentAnalysis/Chunks/
+ScispaCy/en_ner_bc5cdr_md-0.5.4.tar.gz
 
 # Ignore the Data/99.Backup/ folder and all its contents
 Data/99.Backup/
