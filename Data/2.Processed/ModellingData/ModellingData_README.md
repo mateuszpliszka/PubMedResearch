@@ -46,11 +46,11 @@ This folder contains various Parquet files used for advanced modeling tasks (e.g
 
 ## `P5_final_merged.parquet`
 - **Contains**: A more consolidated dataset, combining multiple token columns and deduplications.
-- **Usage**: Often used for large-scale analyses (topic modeling, classification).
+- **Usage**: Old dataset used for large-scale analyses (topic modeling, classification).
 
 ## `P5_final_new.parquet`
 - **Contains**: Similar to `P5_final_merged` but with incremental improvements or new columns (e.g., refined tokens).
-- **Usage**: Potentially the main dataset for advanced tasks (sentiment, NER, topic modeling).
+- **Usage**: Old main dataset for advanced tasks (sentiment, NER, topic modeling).
 
 ## `P6_final_merged.parquet`
 - **Contains**: The newest version of the data, including all fields from previous versions plus a new column with merged tokens (e.g., `merged_all_tokens`).
